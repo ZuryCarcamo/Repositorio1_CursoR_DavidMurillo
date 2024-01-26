@@ -1,25 +1,70 @@
 ---
-title: "uso de Github"
+title: "Proyecto final R, capacitación hidrobiología"
 author: "Zury Carcamo"
 format: html
 editor: visual
 ---
 ::: panel-tabset
  
-## Prueba 1 
+## Asignacion clase 1 
 
-nose
+Ingreso de datos, Limpieza y filtrado de datos
 
-## Ejercicio 1
+#cargar paquete
+```{r}
+library(tidyverse)
+```
 
-Hacer tareas 
 
-## ejercicio 2
 
-tomar cafe 
+#cargar base de datos 
+```{r}
+penguins<- read.csv("data/penguins_size.csv")
+```
+
+
+
+#Filtrado de datos
+
+```{r}
+penguinsSexoHembra<-penguins %>%
+  filter(sex== "FEMALE")
+table(penguinsSexoHembra$sex)
+```
+
+#Visualizar las islas 
+
+table(penguins$island)
+table(penguins$sex)
+table(penguins$species)
+
+#Seleccionar variables
+ penguins2<- penguins %>%
+   select(island) %>%
+   filter(island=="Dream")
+head(penguins2) 
+str(penguins2)
+table(penguins2$island)
+
+#resumen por sexo y por isla 
+
+penguinsS<- penguins %>%
+  group_by(island, sex) %>%
+  summarise(mediapeso= mean(body_mass_g))
+penguinsS  
+
+
+
+## Asignacion clase 2
+
+Uso R Markdow y visualizacion de datos 
+
+## Asignacion clase 3
+
+Procesamiento de datos
 
 ## Quarto
 
-comer
+Listo!
 
 :::
