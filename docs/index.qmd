@@ -4,8 +4,22 @@ author: "Zury Carcamo"
 format: html
 editor: visual
 ---
+::: panel-tabset
+ 
+## Prueba 1 
 
-##Prueba 1 
-##Ejercicio 1
+nose
+
+## Ejercicio 1
+
+Hacer tareas 
+
 ## ejercicio 2
+
+tomar cafe 
+
 ## Quarto
+
+comer
+
+:::
