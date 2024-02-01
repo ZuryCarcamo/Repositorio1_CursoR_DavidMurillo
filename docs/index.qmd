@@ -4,25 +4,23 @@ author: "Zury Carcamo"
 format: html
 editor: visual
 ---
+
 ::: panel-tabset
- 
-## Asignacion clase 1 
+## Asignacion clase 1
 
 Ingreso de datos, Limpieza y filtrado de datos
 
 #cargar paquete
+
 ```{r}
 library(tidyverse)
 ```
 
+#cargar base de datos
 
-
-#cargar base de datos 
 ```{r}
 penguins<- read.csv("data/penguins_size.csv")
 ```
-
-
 
 #Filtrado de datos
 
@@ -32,32 +30,19 @@ penguinsSexoHembra<-penguins %>%
 table(penguinsSexoHembra$sex)
 ```
 
-#Visualizar las islas 
+#Visualizar las islas
 
-table(penguins$island)
-table(penguins$sex)
-table(penguins$species)
+table(penguins$island) table(penguins$sex) table(penguins\$species)
 
-#Seleccionar variables
- penguins2<- penguins %>%
-   select(island) %>%
-   filter(island=="Dream")
-head(penguins2) 
-str(penguins2)
-table(penguins2$island)
+#Seleccionar variables penguins2\<- penguins %\>% select(island) %\>% filter(island=="Dream") head(penguins2) str(penguins2) table(penguins2\$island)
 
-#resumen por sexo y por isla 
+#resumen por sexo y por isla
 
-penguinsS<- penguins %>%
-  group_by(island, sex) %>%
-  summarise(mediapeso= mean(body_mass_g))
-penguinsS  
-
-
+penguinsS\<- penguins %\>% group_by(island, sex) %\>% summarise(mediapeso= mean(body_mass_g)) penguinsS
 
 ## Asignacion clase 2
 
-Uso R Markdow y visualizacion de datos 
+Uso R Markdow y visualizacion de datos
 
 ## Asignacion clase 3
 
@@ -66,5 +51,4 @@ Procesamiento de datos
 ## Quarto
 
 Listo!
-
 :::
