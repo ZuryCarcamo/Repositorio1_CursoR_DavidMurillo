@@ -6,7 +6,7 @@ editor: visual
 ---
 
 ::: panel-tabset
-## Asignacion clase 1
+## Asignación clase 1
 
 Ingreso de datos, Limpieza y filtrado de datos
 
@@ -32,19 +32,38 @@ table(penguinsSexoHembra$sex)
 
 #Visualizar las islas
 
-table(penguins$island) table(penguins$sex) table(penguins\$species)
+```{r}
+table(penguins$island)
 
-#Seleccionar variables penguins2\<- penguins %\>% select(island) %\>% filter(island=="Dream") head(penguins2) str(penguins2) table(penguins2\$island)
+ table(penguins$sex) 
+
+table(penguins$species)
+```
+
+#Seleccionar variables
+
+```{r}
+penguins2<- penguins %>% 
+  select(island) %>% 
+  filter(island=="Dream") 
+head(penguins2) str(penguins2)
+table(penguins2$island)
+```
 
 #resumen por sexo y por isla
 
-penguinsS\<- penguins %\>% group_by(island, sex) %\>% summarise(mediapeso= mean(body_mass_g)) penguinsS
+```{r}
+penguinsS<- penguins %>%
+  group_by(island, sex) %>%
+  summarise(mediapeso= mean(body_mass_g)) 
+penguinsS
+```
 
-## Asignacion clase 2
+## Asignación clase 2
 
-Uso R Markdow y visualizacion de datos
+Uso R Markdow y visualización de datos
 
-## Asignacion clase 3
+## Asignación clase 3
 
 Procesamiento de datos
 
