@@ -1,0 +1,29 @@
+Package: seabird.tracking
+Title: Template for R projects
+Authors@R: c(
+    person(given = "Ciencia de Datos",
+           family = "GECI",
+           role = c("aut", "cre", "cph"),
+           email = "ciencia.datos@islas.org.mx"
+           ))
+Config/testthat/edition: 3
+Description: Repository to gls and gps tracking of seabirds
+Encoding: UTF-8
+Imports:
+    dplyr,
+    lubridate,
+    R6,
+    readr,
+    rjson,
+    stringr,
+    tidyverse,
+LazyData: true
+License: AGPL-3.0-or-later
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
+Suggests:
+    devtools,
+    roxygen2,
+    testthat
+Type: Package
+Version: 0.1.0

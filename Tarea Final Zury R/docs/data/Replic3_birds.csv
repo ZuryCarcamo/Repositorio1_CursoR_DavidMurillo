@@ -1,0 +1,330 @@
+Sitio #;Sitio #;Sitio nombre;Fecha (m/d/a);Hora(0:00-24:00);Viento;Cielo;Rio;Especies;Num. 0-50;Num. >50-100;Num. >100;Sex;1;2;3;4;5;6;7;8;9;10;11;12;Sequence
+53;53F;Allan humid;3/8/2016;08:21;1;0;0;SALATR;2;;;;;;;;;;;;;;;;G/B/M
+53;53F;Allan humid;3/8/2016;08:21;1;0;0;ICTCHR;1;;;;;;;;;;;;;;;;G/B/M
+53;53F;Allan humid;3/8/2016;08:21;1;0;0;PSAWAG;2;;;;;;;;;;;;;;;;G/B/M
+53;53F;Allan humid;3/8/2016;08:21;1;0;0;TROAED;1;;;;;;;;;;;;;;;;G/B/M
+53;53F;Allan humid;3/8/2016;08:21;1;0;0;SPINOT;1;;;;;;;;;;;;;;;;G/B/M
+53;53F;Allan humid;3/8/2016;08:21;1;0;0;CANMOD;1;;;;;;;;;;;;;;;;G/B/M
+53;53F;Allan humid;3/8/2016;08:21;1;0;0;AMACYC*;1;;;;;;;;;;;;;;;;G/B/M
+53;53F;Allan humid;3/8/2016;08:21;1;0;0;BASRUF;1;;;;;;;;;;;;;;;;G/B/M
+53;53F;Allan humid;3/8/2016;08:21;1;0;0;SETVIR;1;;;M;;;;;;;;;;;;;G/B/M
+53;53F;Allan humid;3/8/2016;08:21;1;0;0;CARPUS;1;;;M;;;;;;;;;;;;;G/B/M
+53;53F;Allan humid;3/8/2016;08:21;1;0;0;ORTVET;;;4;;;;;;;;;;;;;;G/B/M
+53;53F;Allan humid;3/8/2016;08:21;1;0;0;SETGRA;2;;;M;;;;;;;;;;;;;G/B/M
+25;25F;Bosque bajo south 2;03/15/2016;10:39;2;0;0;BUTMAG;1;;;;;;;;;;;;;;;;B/G/M
+25;25F;Bosque bajo south 2;03/15/2016;10:39;2;0;0;SETVIR;1;;;M;;;;;;;;;;;;;B/G/M
+25;25F;Bosque bajo south 2;03/15/2016;10:39;2;0;0;PSAMON;1;;;;;;;;;;;;;;;;B/G/M
+25;25F;Bosque bajo south 2;03/15/2016;10:39;2;0;0;EMPFLT*;1;;;;;;;;;;;;;;;;B/G/M
+25;25F;Bosque bajo south 2;03/15/2016;10:39;2;0;0;CORATR;2;;;;;;;;;;;;;;;;B/G/M
+16;16F;Bosque de Allan;03/14/2016;07:49;2;0;0;MELFOR;1;;;M;;;;;;;;;;;;;G/B/M
+16;16F;Bosque de Allan;03/14/2016;07:49;2;0;0;SPINOT;4;;;;;;;;;;;;;;;;G/B/M
+16;16F;Bosque de Allan;03/14/2016;07:49;2;0;0;CONCOO;1;;;;;;;;;;;;;;;;G/B/M
+16;16F;Bosque de Allan;03/14/2016;07:49;2;0;0;CAMZON;1;;;;;;;;;;;;;;;;G/B/M
+16;16F;Bosque de Allan;03/14/2016;07:49;2;0;0;SETGRA;2;;;M;;;;;;;;;;;;;G/B/M
+16;16F;Bosque de Allan;03/14/2016;07:49;2;0;0;ACCCHI;1;;;;;;;;;;;;;;;;G/B/M
+16;16F;Bosque de Allan;03/14/2016;07:49;2;0;0;MNIVAR;1;;;M;;;;;;;;;;;;;G/B/M
+16;16F;Bosque de Allan;03/14/2016;07:49;2;0;0;CYASTE;2;;;;;;;;;;;;;;;;G/B/M
+16;16F;Bosque de Allan;03/14/2016;07:49;2;0;0;SETVIR;2;;;M;;;;;;;;;;;;;G/B/M
+16;16F;Bosque de Allan;03/14/2016;07:49;2;0;0;MYIPIC;2;;;;;;;;;;;;;;;;G/B/M
+16;16F;Bosque de Allan;03/14/2016;07:49;2;0;0;PENNIG;1;;;;;;;;;;;;;;;;G/B/M
+16;16F;Bosque de Allan;03/14/2016;07:49;2;0;0;VIRPHI;1;;;;;;;;;;;;;;;;G/B/M
+1;1F;El Plan de Tule #1;03/31/2016;07:25;2;0;0;SALATR;1;;;;;;;;;;;;;;;;G/B/M
+1;1F;El Plan de Tule #1;03/31/2016;07:25;2;0;0;ICTCHR;1;;;;;;;;;;;;;;;;G/B/M
+1;1F;El Plan de Tule #1;03/31/2016;07:25;2;0;0;DIVDIV;1;;;;;;;;;;;;;;;;G/B/M
+1;1F;El Plan de Tule #1;03/31/2016;07:25;2;0;0;MELFOR;1;;;;;;;;;;;;;;;;G/B/M
+1;1F;El Plan de Tule #1;03/31/2016;07:25;2;0;0;PSIMOR;1;;;;;;;;;;;;;;;;G/B/M
+2;2F;El Plan de Tule #2;03/31/2016;08:20;4;0;0;CANMOD;1;;;;;;;;;;;;;;;;B/G/M
+2;2F;El Plan de Tule #2;03/31/2016;08:20;4;0;0;CAEAUR*;2;;;;;;;;;;;;;;;;B/G/M
+2;2F;El Plan de Tule #2;03/31/2016;08:20;4;0;0;HYLLEU;1;;;;;;;;;;;;;;;;B/G/M
+5;5C;Elias Café;03/15/2016;09:38;1;0;0;VERCRY;1;;;M;;;;;;;;;;;;12;G/B/M
+5;5C;Elias Café;03/15/2016;09:38;1;0;0;PSAMON;1;;;;;;;;;;;;;;;;G/B/M
+5;5C;Elias Café;03/15/2016;09:38;1;0;0;SETVIR;4;;;M;;;;;;;;;;;;;G/B/M
+5;5C;Elias Café;03/15/2016;09:38;1;0;0;SETPIM*;1;;;;;;;;;;;;;;;;G/B/M
+5;5C;Elias Café;03/15/2016;09:38;1;0;0;SETPEN;1;;;M;;;;;;;;;;;;;G/B/M
+5;5C;Elias Café;03/15/2016;09:38;1;0;0;MELAUR;2;;;;;;;;;;;;;;;;G/B/M
+5;5C;Elias Café;03/15/2016;09:38;1;0;0;SETMAG;1;;;M;;;;;;;;;;;;;G/B/M
+5;5C;Elias Café;03/15/2016;09:38;1;0;0;VIRPHI;2;;;;;;;;;;;;;;;;G/B/M
+5;5C;Elias Café;03/15/2016;09:38;1;0;0;LEPSOU;1;;;;;;;;;;;;;;;;G/B/M
+5;5C;Elias Café;03/15/2016;09:38;1;0;0;VIRFLF*;1;;;;;;;;;;;;;;;;G/B/M
+23;23F;Encino Rd 3;03/31/2016;13:00;3;0;0;PSIMOR;5;;;;;;;;;;;;;;;;G/B/M
+23;23F;Encino Rd 3;03/31/2016;13:00;3;0;0;SETVIR;3;;;M;;;;;;;;;;;;;G/B/M
+23;23F;Encino Rd 3;03/31/2016;13:00;3;0;0;OREPER;2;;;;;;;;;;;;;;;;G/B/M
+23;23F;Encino Rd 3;03/31/2016;13:00;3;0;0;SETMAG;2;;;M,H;;;;;;;;;;;;;G/B/M
+23;23F;Encino Rd 3;03/31/2016;13:00;3;0;0;MELFOR;1;;;;;;;;;;;;;;;;G/B/M
+23;23F;Encino Rd 3;03/31/2016;13:00;3;0;0;GLABRA;1;;;;;;;;;;;;;;;;G/B/M
+23;23F;Encino Rd 3;03/31/2016;13:00;3;0;0;MNIVAR;1;;;M;;;;;;;;;;;;;G/B/M
+10;10C;Finca de Agusto Rojas;3/8/2016;10:25;0;0;0;SALATR;1;;;;;;;;;;;;;;;;G/B/M
+10;10C;Finca de Agusto Rojas;3/8/2016;10:25;0;0;0;CARPUS;1;;;M;;;;;;;;;;;;;G/B/M
+10;10C;Finca de Agusto Rojas;3/8/2016;10:25;0;0;0;TROCAL;1;;;;;;;;;;;;;;;;G/B/M
+10;10C;Finca de Agusto Rojas;3/8/2016;10:25;0;0;0;SALMAX;1;;;;;;;;;;;;;;;;G/B/M
+10;10C;Finca de Agusto Rojas;3/8/2016;10:25;0;0;0;GLABRA;1;;;;;;;;;;;;;;;;G/B/M
+10;10C;Finca de Agusto Rojas;3/8/2016;10:25;0;0;0;SETVIR;1;;;H;;;;;;;;;;;;;G/B/M
+10;10C;Finca de Agusto Rojas;3/8/2016;10:25;0;0;0;VIRPHI;3;;;;;;;;;;;;;;;;G/B/M
+10;10C;Finca de Agusto Rojas;3/8/2016;10:25;0;0;0;AMARUT;2;;;;;;;;;;;;;;;;G/B/M
+10;10C;Finca de Agusto Rojas;3/8/2016;10:25;0;0;0;EMPFLT*;1;;;;;;;;;;;;;;;;G/B/M
+30;30F;Finca de Alan;3/8/2016;09:12;2;0;0;PSAWAG;1;;;;;;;;;;;;;;;;B/G/M
+30;30F;Finca de Alan;3/8/2016;09:12;2;0;0;EUPEXI;1;;;;;;;;;;;;;;;;B/G/M
+30;30F;Finca de Alan;3/8/2016;09:12;2;0;0;SETVIR;2;;;M;;;;;;;;;;;;;B/G/M
+30;30F;Finca de Alan;3/8/2016;09:12;2;0;0;MYAUNI;1;;;;;;;;;;;;;;;;B/G/M
+30;30F;Finca de Alan;3/8/2016;09:12;2;0;0;MICPHI;1;;;;;;;;;;;;;;;;B/G/M
+30;30F;Finca de Alan;3/8/2016;09:12;2;0;0;AMBHOL;1;;;;;;;;;;;;;;;;B/G/M
+30;30F;Finca de Alan;3/8/2016;09:12;2;0;0;HENLES*;1;;;;;;;;;;;;;;;;B/G/M
+30;30F;Finca de Alan;3/8/2016;09:12;2;0;0;HYLDEC;1;;;;;;;;;;;;;;;;B/G/M
+15;15C;Finca de Allan;3/8/2016;11:42;0;1;0;VERCRY;1;;;M;;;;;;;;;10;;;;G/B/M
+15;15C;Finca de Allan;3/8/2016;11:42;0;1;0;DIVDIV;1;;;;;;;;;;;;;;;;G/B/M
+15;15C;Finca de Allan;3/8/2016;11:42;0;1;0;PSIMOR;1;;;;;;;;;;;;;;;;G/B/M
+15;15C;Finca de Allan;3/8/2016;11:42;0;1;0;HENLES*;1;;;;;;;;;;;;;;;;G/B/M
+15;15C;Finca de Allan;3/8/2016;11:42;0;1;0;BASRUF;1;;;;;;;;;;;;;;;;G/B/M
+15;15C;Finca de Allan;3/8/2016;11:42;0;1;0;DUMCAR;1;;;;;;;;;;;;;;;;G/B/M
+15;15C;Finca de Allan;3/8/2016;11:42;0;1;0;GLABRA;1;;;;;;;;;;;;;;;;G/B/M
+15;15C;Finca de Allan;3/8/2016;11:42;0;1;0;SETVIR;1;;;M;;;;;;;;;;;;;G/B/M
+15;15C;Finca de Allan;3/8/2016;11:42;0;1;0;SETPEN;1;;;M;;;;;;;;;;;;;G/B/M
+15;15C;Finca de Allan;3/8/2016;11:42;0;1;0;MNIVAR;1;;;H;;;;;;;;;;;;;G/B/M
+15;15C;Finca de Allan;3/8/2016;11:42;0;1;0;CANMOD;1;;;;;;;;;;;;;;;;G/B/M
+15;15C;Finca de Allan;3/8/2016;11:42;0;1;0;AMACYC*;1;;;;;;;;;;;;;;;;G/B/M
+15;15C;Finca de Allan;3/8/2016;11:42;0;1;0;ONCCIN;1;;;;;;;;;;;;;;;;G/B/M
+37;37C;Finca de Augustine;4/1/2016;10:41;5;0;2;PSIMOR;2;;;;;;;;;;;;;;;;G/B/M
+37;37C;Finca de Augustine;4/1/2016;10:41;5;0;2;RAMSUL;1;;;;;;;;;;;;;;;;G/B/M
+37;37C;Finca de Augustine;4/1/2016;10:41;5;0;2;SETFUS;1;;;M;;;;;;;;;;;;;G/B/M
+37;37C;Finca de Augustine;4/1/2016;10:41;5;0;2;PIACAY;1;;;;;;;;;;;;;;;;G/B/M
+37;37C;Finca de Augustine;4/1/2016;10:41;5;0;2;SETVIR;1;;;M;;;;;;;;;;;;;G/B/M
+37;37C;Finca de Augustine;4/1/2016;10:41;5;0;2;CARPUS;1;;;M;;;;;;;;;;;;;G/B/M
+37;37C;Finca de Augustine;4/1/2016;10:41;5;0;2;SETMAG;1;;;M;;;;;;;;;;;;;G/B/M
+37;37C;Finca de Augustine;4/1/2016;10:41;5;0;2;HYLLEU;1;;;M;;;;;;;;;;;;;G/B/M
+37;37C;Finca de Augustine;4/1/2016;10:41;5;0;2;OREPER;1;;;M;;;;;;;;;;;;;G/B/M
+37;37C;Finca de Augustine;4/1/2016;10:41;5;0;2;EMPFLT*;1;;;;;;;;;;;;;;;;G/B/M
+37;37C;Finca de Augustine;4/1/2016;10:41;5;0;2;BASRUF;1;;;;;;;;;;;;;;;;G/B/M
+8;8F;Finca de Elias (Near);03/15/2016;08:35;0;0;0;EMPFLT*;1;;;;;;;;;;;;;;;;B/G/M
+8;8F;Finca de Elias (Near);03/15/2016;08:35;0;0;0;BUTMAG;1;;;;;;;;;;;;;;;;B/G/M
+8;8F;Finca de Elias (Near);03/15/2016;08:35;0;0;0;GLABRA;1;;;;;;;;;;;;;;;;B/G/M
+8;8F;Finca de Elias (Near);03/15/2016;08:35;0;0;0;PSAMON;2;;;;;;;;;;;;;;;;B/G/M
+8;8F;Finca de Elias (Near);03/15/2016;08:35;0;0;0;SETVIR;1;;;;;;;;;;;;;;;;B/G/M
+8;8F;Finca de Elias (Near);03/15/2016;08:35;0;0;0;CAEAUR*;1;;;;;;;;;;;;;;;;B/G/M
+48;48F;Finca de Enma;4/1/2016;09:23;5;0;0;VERCRY;1;;;M;;;;;;;;;;;;8;B/G/M
+48;48F;Finca de Enma;4/1/2016;09:23;5;0;0;MOMMOM;2;;;;;;;;;;;;;;;;B/G/M
+48;48F;Finca de Enma;4/1/2016;09:23;5;0;0;ONCCIN;1;;;;;;;;;;;;;;;;B/G/M
+48;48F;Finca de Enma;4/1/2016;09:23;5;0;0;CHLOCC;2;;;;;;;;;;;;;;;;B/G/M
+48;48F;Finca de Enma;4/1/2016;09:23;5;0;0;SETMAG;1;;;H;;;;;;;;;;;;;B/G/M
+48;48F;Finca de Enma;4/1/2016;09:23;5;0;0;CARPUS;3;;;2M,1H;;;;;;;;;;;;;B/G/M
+48;48F;Finca de Enma;4/1/2016;09:23;5;0;0;SETVIR;2;;;M,H;;;;;;;;;;;;;B/G/M
+48;48F;Finca de Enma;4/1/2016;09:23;5;0;0;MNIVAR;2;;;M,H;;;;;;;;;;;;;B/G/M
+48;48F;Finca de Enma;4/1/2016;09:23;5;0;0;MIOOLE;1;;;;;;;;;;;;;;;;B/G/M
+48;48F;Finca de Enma;4/1/2016;09:23;5;0;0;SITGRI;1;;;;;;;;;;;;;;;;B/G/M
+43;43F;Finca de Fredie;3/8/2016;06:33;0;2;0;VERCRY;1;;;M;;10;4;7;5;8;10;;11;12;;;G/B/M
+43;43F;Finca de Fredie;3/8/2016;06:33;0;2;0;VERCRY;1;;;M;;;;6;;;;;;;;;G/B/M
+43;43F;Finca de Fredie;3/8/2016;06:33;0;2;0;PATFLA;1;;;;;;;;;;;;;;;;G/B/M
+43;43F;Finca de Fredie;3/8/2016;06:33;0;2;0;EMPFLT*;1;;;;;;;;;;;;;;;;G/B/M
+43;43F;Finca de Fredie;3/8/2016;06:33;0;2;0;AMAALB;2;;;;;;;;;;;;;;;;G/B/M
+43;43F;Finca de Fredie;3/8/2016;06:33;0;2;0;HENLES*;1;;;;;;;;;;;;;;;;G/B/M
+43;43F;Finca de Fredie;3/8/2016;06:33;0;2;0;ONCCIN;1;;;;;;;;;;;;;;;;G/B/M
+43;43F;Finca de Fredie;3/8/2016;06:33;0;2;0;BASCUL;1;;;;;;;;;;;;;;;;G/B/M
+43;43F;Finca de Fredie;3/8/2016;06:33;0;2;0;SETMAG;1;;;H;;;;;;;;;;;;;G/B/M
+43;43F;Finca de Fredie;3/8/2016;06:33;0;2;0;SETPEN;1;;;M;;;;;;;;;;;;;G/B/M
+43;43F;Finca de Fredie;3/8/2016;06:33;0;2;0;HABRUB;2;;;M,H;;;;;;;;;;;;;G/B/M
+43;43F;Finca de Fredie;3/8/2016;06:33;0;2;0;TOLSUL;1;;;;;;;;;;;;;;;;G/B/M
+43;43F;Finca de Fredie;3/8/2016;06:33;0;2;0;CARPUS;1;;;M;;;;;;;;;;;;;G/B/M
+43;43F;Finca de Fredie;3/8/2016;06:33;0;2;0;EUPEXI;1;;;;;;;;;;;;;;;;G/B/M
+43;43F;Finca de Fredie;3/8/2016;06:33;0;2;0;SITGRI;1;;;;;;;;;;;;;;;;G/B/M
+43;43F;Finca de Fredie;3/8/2016;06:33;0;2;0;DUMCAR;1;;;;;;;;;;;;;;;;G/B/M
+43;43F;Finca de Fredie;3/8/2016;06:33;0;2;0;PHASTR;1;;;;;;;;;;;;;;;;G/B/M
+43;43F;Finca de Fredie;3/8/2016;06:33;0;2;0;GLABRA;1;;;;;;;;;;;;;;;;G/B/M
+43;43F;Finca de Fredie;3/8/2016;06:33;0;2;0;MNIVAR;1;;;H;;;;;;;;;;;;;G/B/M
+47;47C;Finca de Hincho;03/16/2016;12:20;2;0;0;VERCRY;1;;;M;;;;;;12;;;;;;;G/B/M
+47;47C;Finca de Hincho;03/16/2016;12:20;2;0;0;DUMCAR;1;;;;;;;;;;;;;;;;G/B/M
+47;47C;Finca de Hincho;03/16/2016;12:20;2;0;0;DIVDIV;1;;;;;;;;;;;;;;;;G/B/M
+47;47C;Finca de Hincho;03/16/2016;12:20;2;0;0;MELAUR;1;;;;;;;;;;;;;;;;G/B/M
+47;47C;Finca de Hincho;03/16/2016;12:20;2;0;0;TOLSUL;1;;;;;;;;;;;;;;;;G/B/M
+47;47C;Finca de Hincho;03/16/2016;12:20;2;0;0;SETVIR;3;;;1H,2M;;;;;;;;;;;;;G/B/M
+47;47C;Finca de Hincho;03/16/2016;12:20;2;0;0;PSAMON;1;;;;;;;;;;;;;;;;G/B/M
+47;47C;Finca de Hincho;03/16/2016;12:20;2;0;0;SETRUT;1;;;H;;;;;;;;;;;;;G/B/M
+47;47C;Finca de Hincho;03/16/2016;12:20;2;0;0;THRRUL*;1;;;;;;;;;;;;;;;;G/B/M
+47;47C;Finca de Hincho;03/16/2016;12:20;2;0;0;MNIVAR;2;;;H,M;;;;;;;;;;;;;G/B/M
+47;47C;Finca de Hincho;03/16/2016;12:20;2;0;0;PIRRUB;1;;;M;;;;;;;;;;;;;G/B/M
+47;47C;Finca de Hincho;03/16/2016;12:20;2;0;0;OREPER;8;;;;;;;;;;;;;;;;G/B/M
+47;47C;Finca de Hincho;03/16/2016;12:20;2;0;0;CARPUS;1;;;M;;;;;;;;;;;;;G/B/M
+22;22C;Finca de Julio;03/30/2016;11:05;2;0;0;PSAMON;2;;;;;;;;;;;;;;;;G/B/M
+22;22C;Finca de Julio;03/30/2016;11:05;2;0;0;CAEAUR*;1;;;;;;;;;;;;;;;;G/B/M
+22;22C;Finca de Julio;03/30/2016;11:05;2;0;0;SETRUT;1;;;M;;;;;;;;;;;;;G/B/M
+22;22C;Finca de Julio;03/30/2016;11:05;2;0;0;TOLSUL;1;;;;;;;;;;;;;;;;G/B/M
+22;22C;Finca de Julio;03/30/2016;11:05;2;0;0;SETVIR;1;;;M;;;;;;;;;;;;;G/B/M
+22;22C;Finca de Julio;03/30/2016;11:05;2;0;0;GLABRA;1;;;;;;;;;;;;;;;;G/B/M
+22;22C;Finca de Julio;03/30/2016;11:05;2;0;0;MELAUR;1;;;;;;;;;;;;;;;;G/B/M
+22;22C;Finca de Julio;03/30/2016;11:05;2;0;0;SETPEN;1;;;M;;;;;;;;;;;;;G/B/M
+22;22C;Finca de Julio;03/30/2016;11:05;2;0;0;SETMAG;1;;;M;;;;;;;;;;;;;G/B/M
+22;22C;Finca de Julio;03/30/2016;11:05;2;0;0;EMPFLT*;1;;;;;;;;;;;;;;;;G/B/M
+22;22C;Finca de Julio;03/30/2016;11:05;2;0;0;MNIVAR;1;;;H;;;;;;;;;;;;;G/B/M
+24;24C;Finca de Maria;03/17/2016;07.03;2;0;0;MOMMOM;2;;;;;;;;;;;;;;;;B/G/M
+24;24C;Finca de Maria;03/17/2016;07.03;2;0;0;QUIMEX;1;;;;;;;;;;;;;;;;B/G/M
+24;24C;Finca de Maria;03/17/2016;07.03;2;0;0;MELAUR;4;;;;;;;;;;;;;;;;B/G/M
+24;24C;Finca de Maria;03/17/2016;07.03;2;0;0;PSAMON;2;;;;;;;;;;;;;;;;B/G/M
+24;24C;Finca de Maria;03/17/2016;07.03;2;0;0;DIVDIV;1;;;;;;;;;;;;;;;;B/G/M
+24;24C;Finca de Maria;03/17/2016;07.03;2;0;0;PSIMOR;2;;;;;;;;;;;;;;;;B/G/M
+24;24C;Finca de Maria;03/17/2016;07.03;2;0;0;CARPUS;1;;;;;;;;;;;;;;;;B/G/M
+24;24C;Finca de Maria;03/17/2016;07.03;2;0;0;GLABRA;1;;;;;;;;;;;;;;;;B/G/M
+24;24C;Finca de Maria;03/17/2016;07.03;2;0;0;AULPRA;2;;;;;;;;;;;;;;;;B/G/M
+24;24C;Finca de Maria;03/17/2016;07.03;2;0;0;SETMAG;1;;;M;;;;;;;;;;;;;B/G/M
+19;19C;Finca de Mario;3/8/2016;07:24;1;1;0;PSIHOL;15;;;;;;;;;;;;;;;;G/B/M
+19;19C;Finca de Mario;3/8/2016;07:24;1;1;0;PSAWAG;10;;;;;;;;;;;;;;;;G/B/M
+19;19C;Finca de Mario;3/8/2016;07:24;1;1;0;DIVDIV;2;;;;;;;;;;;;;;;;G/B/M
+19;19C;Finca de Mario;3/8/2016;07:24;1;1;0;PSAMON;3;;;;;;;;;;;;;;;;G/B/M
+19;19C;Finca de Mario;3/8/2016;07:24;1;1;0;MOMMOM;1;;;;;;;;;;;;;;;;G/B/M
+19;19C;Finca de Mario;3/8/2016;07:24;1;1;0;OREPER;2;;;;;;;;;;;;;;;;G/B/M
+19;19C;Finca de Mario;3/8/2016;07:24;1;1;0;MELAUR;1;;;;;;;;;;;;;;;;G/B/M
+19;19C;Finca de Mario;3/8/2016;07:24;1;1;0;COLRUB;1;;;;;;;;;;;;;;;;G/B/M
+19;19C;Finca de Mario;3/8/2016;07:24;1;1;0;PSIMOR;2;;;;;;;;;;;;;;;;G/B/M
+19;19C;Finca de Mario;3/8/2016;07:24;1;1;0;CRYSOU;;1;;;;;;;;;;;;;;;G/B/M
+19;19C;Finca de Mario;3/8/2016;07:24;1;1;0;GLABRA;1;;;;;;;;;;;;;;;;G/B/M
+42;42C;Finca de Melvin;03/26/2016;11:15;2;0;0;MELAUR;2;;;;;;;;;;;;;;;;B/G/M
+42;42C;Finca de Melvin;03/26/2016;11:15;2;0;0;ICTPLU;1;;;;;;;;;;;;;;;;B/G/M
+42;42C;Finca de Melvin;03/26/2016;11:15;2;0;0;SETVIR;3;;;M;;;;;;;;;;;;;B/G/M
+42;42C;Finca de Melvin;03/26/2016;11:15;2;0;0;TURGRA;1;;;;;;;;;;;;;;;;B/G/M
+42;42C;Finca de Melvin;03/26/2016;11:15;2;0;0;SETMAG;1;;;H;;;;;;;;;;;;;B/G/M
+42;42C;Finca de Melvin;03/26/2016;11:15;2;0;0;TITSEM;2;;;;;;;;;;;;;;;;B/G/M
+42;42C;Finca de Melvin;03/26/2016;11:15;2;0;0;PITSUL;1;;;;;;;;;;;;;;;;B/G/M
+42;42C;Finca de Melvin;03/26/2016;11:15;2;0;0;PSAMON;1;;;;;;;;;;;;;;;;B/G/M
+42;42C;Finca de Melvin;03/26/2016;11:15;2;0;0;VIRPHI;1;;;;;;;;;;;;;;;;B/G/M
+42;42C;Finca de Melvin;03/26/2016;11:15;2;0;0;SETPEN;1;;;M;;;;;;;;;;;;;B/G/M
+42;42C;Finca de Melvin;03/26/2016;11:15;2;0;0;BUTBRA;1;;;;;;;;;;;;;;;;B/G/M
+9;9F;Finca de Norma (S Edge);03/15/2016;07:47;0;0;0;MELFOR;1;;;;;;;;;;;;;;;;G/B/M
+9;9F;Finca de Norma (S Edge);03/15/2016;07:47;0;0;0;BASRUF;1;;;;;;;;;;;;;;;;G/B/M
+9;9F;Finca de Norma (S Edge);03/15/2016;07:47;0;0;0;CANMOD;1;;;;;;;;;;;;;;;;G/B/M
+9;9F;Finca de Norma (S Edge);03/15/2016;07:47;0;0;0;SETVIR;2;;;M;;;;;;;;;;;;;G/B/M
+9;9F;Finca de Norma (S Edge);03/15/2016;07:47;0;0;0;MNIVAR;2;;;M;;;;;;;;;;;;;G/B/M
+9;9F;Finca de Norma (S Edge);03/15/2016;07:47;0;0;0;TROAED;1;;;;;;;;;;;;;;;;G/B/M
+9;9F;Finca de Norma (S Edge);03/15/2016;07:47;0;0;0;ACCCHI;1;;;;;;;;;;;;;;;;G/B/M
+9;9F;Finca de Norma (S Edge);03/15/2016;07:47;0;0;0;HYLLEU;1;;;M;;;;;;;;;;;;;G/B/M
+9;9F;Finca de Norma (S Edge);03/15/2016;07:47;0;0;0;GLABRA;1;;;;;;;;;;;;;;;;G/B/M
+9;9F;Finca de Norma (S Edge);03/15/2016;07:47;0;0;0;OREPER;2;;;M,H;;;;;;;;;;;;;G/B/M
+38;38C;Finca de Otillo;4/1/2016;07:44;4;0;0;CAMGUA;1;;;;;;;;;;;;;;;;B/G/M
+38;38C;Finca de Otillo;4/1/2016;07:44;4;0;0;PSAMON;3;;;;;;;;;;;;;;;;B/G/M
+38;38C;Finca de Otillo;4/1/2016;07:44;4;0;0;AMAALB;4;;;;;;;;;;;;;;;;B/G/M
+38;38C;Finca de Otillo;4/1/2016;07:44;4;0;0;PSIMOR;4;;;;;;;;;;;;;;;;B/G/M
+38;38C;Finca de Otillo;4/1/2016;07:44;4;0;0;MELAUR;3;;;;;;;;;;;;;;;;B/G/M
+38;38C;Finca de Otillo;4/1/2016;07:44;4;0;0;VIRSOL;1;;;;;;;;;;;;;;;;B/G/M
+38;38C;Finca de Otillo;4/1/2016;07:44;4;0;0;PSAWAG;1;;;;;;;;;;;;;;;;B/G/M
+38;38C;Finca de Otillo;4/1/2016;07:44;4;0;0;TURGRA;1;;;;;;;;;;;;;;;;B/G/M
+38;38C;Finca de Otillo;4/1/2016;07:44;4;0;0;DRYLIN;1;;;;;;;;;;;;;;;;B/G/M
+38;38C;Finca de Otillo;4/1/2016;07:44;4;0;0;QUIMEX;1;;;;;;;;;;;;;;;;B/G/M
+38;38C;Finca de Otillo;4/1/2016;07:44;4;0;0;TITSEM;1;;;;;;;;;;;;;;;;B/G/M
+38;38C;Finca de Otillo;4/1/2016;07:44;4;0;0;VIRPHI;1;;;;;;;;;;;;;;;;B/G/M
+38;38C;Finca de Otillo;4/1/2016;07:44;4;0;0;SETVIR;2;;;M,H;;;;;;;;;;;;;B/G/M
+38;38C;Finca de Otillo;4/1/2016;07:44;4;0;0;EMPFLT*;1;;;;;;;;;;;;;;;;B/G/M
+12;12C;Finca de Ovidio;03/30/2016;09:26;2;0;0;SALATR;1;;;;;;;;;;;;;;;;G/B/M
+12;12C;Finca de Ovidio;03/30/2016;09:26;2;0;0;CARPUS;1;;;M;;;;;;;;;;;;;G/B/M
+12;12C;Finca de Ovidio;03/30/2016;09:26;2;0;0;TOLSUL;1;;;;;;;;;;;;;;;;G/B/M
+12;12C;Finca de Ovidio;03/30/2016;09:26;2;0;0;ICTPLU;1;;;;;;;;;;;;;;;;G/B/M
+12;12C;Finca de Ovidio;03/30/2016;09:26;2;0;0;EMPFLT*;1;;;;;;;;;;;;;;;;G/B/M
+12;12C;Finca de Ovidio;03/30/2016;09:26;2;0;0;VIRPHI;1;;;;;;;;;;;;;;;;G/B/M
+12;12C;Finca de Ovidio;03/30/2016;09:26;2;0;0;TURGRA;1;;;;;;;;;;;;;;;;G/B/M
+12;12C;Finca de Ovidio;03/30/2016;09:26;2;0;0;VIRFLF*;1;;;;;;;;;;;;;;;;G/B/M
+12;12C;Finca de Ovidio;03/30/2016;09:26;2;0;0;SETRUT;1;;;H;;;;;;;;;;;;;G/B/M
+12;12C;Finca de Ovidio;03/30/2016;09:26;2;0;0;SETMAG;1;;;M;;;;;;;;;;;;;G/B/M
+12;12C;Finca de Ovidio;03/30/2016;09:26;2;0;0;SETVIR;1;;;M;;;;;;;;;;;;;G/B/M
+27;27C;Finca de Vincente;03/30/2016;08:24;1;0;0;MELAUR;2;;;;;;;;;;;;;;;;B/G/M
+27;27C;Finca de Vincente;03/30/2016;08:24;1;0;0;PSAMON;2;;;;;;;;;;;;;;;;B/G/M
+27;27C;Finca de Vincente;03/30/2016;08:24;1;0;0;SALATR;1;;;;;;;;;;;;;;;;B/G/M
+27;27C;Finca de Vincente;03/30/2016;08:24;1;0;0;QUIMEX;1;;;;;;;;;;;;;;;;B/G/M
+27;27C;Finca de Vincente;03/30/2016;08:24;1;0;0;BUTMAG;1;;;;;;;;;;;;;;;;B/G/M
+27;27C;Finca de Vincente;03/30/2016;08:24;1;0;0;EMPFLT*;1;;;;;;;;;;;;;;;;B/G/M
+27;27C;Finca de Vincente;03/30/2016;08:24;1;0;0;SETMAG;1;;;M;;;;;;;;;;;;;B/G/M
+27;27C;Finca de Vincente;03/30/2016;08:24;1;0;0;GLABRA;1;;;;;;;;;;;;;;;;B/G/M
+27;27C;Finca de Vincente;03/30/2016;08:24;1;0;0;MOMMOM;1;;;;;;;;;;;;;;;;B/G/M
+39;39C;Finca de Wil Geron;4/1/2016;08:36;4;0;0;BASRUF;1;;;;;;;;;;;;;;;;G/B/M
+39;39C;Finca de Wil Geron;4/1/2016;08:36;4;0;0;PSAWAG;36;;;;;;;;;;;;;;;;G/B/M
+39;39C;Finca de Wil Geron;4/1/2016;08:36;4;0;0;PSIMOR;2;;;;;;;;;;;;;;;;G/B/M
+39;39C;Finca de Wil Geron;4/1/2016;08:36;4;0;0;CANMOD;1;;;;;;;;;;;;;;;;G/B/M
+39;39C;Finca de Wil Geron;4/1/2016;08:36;4;0;0;MELAUR;1;;;;;;;;;;;;;;;;G/B/M
+39;39C;Finca de Wil Geron;4/1/2016;08:36;4;0;0;ZENASI;1;;;;;;;;;;;;;;;;G/B/M
+39;39C;Finca de Wil Geron;4/1/2016;08:36;4;0;0;RAMSUL;1;;;;;;;;;;;;;;;;G/B/M
+39;39C;Finca de Wil Geron;4/1/2016;08:36;4;0;0;DIVDIV;2;;;;;;;;;;;;;;;;G/B/M
+39;39C;Finca de Wil Geron;4/1/2016;08:36;4;0;0;QUIMEX;1;;;;;;;;;;;;;;;;G/B/M
+39;39C;Finca de Wil Geron;4/1/2016;08:36;4;0;0;GLABRA;1;;;;;;;;;;;;;;;;G/B/M
+57;57F;Melvin Forest;03/26/2016;10:25;2;0;0;SETPEN;1;;;M;;;;;;;;;;;;;B/G/M
+57;57F;Melvin Forest;03/26/2016;10:25;2;0;0;TOLSUL;1;;;;;;;;;;;;;;;;B/G/M
+57;57F;Melvin Forest;03/26/2016;10:25;2;0;0;EMPFLT*;1;;;;;;;;;;;;;;;;B/G/M
+57;57F;Melvin Forest;03/26/2016;10:25;2;0;0;SETVIR;1;;;M;;;;;;;;;;;;;B/G/M
+57;57F;Melvin Forest;03/26/2016;10:25;2;0;0;HENLES*;1;;;;;;;;;;;;;;;;B/G/M
+57;57F;Melvin Forest;03/26/2016;10:25;2;0;0;MNIVAR;1;;;M;;;;;;;;;;;;;B/G/M
+57;57F;Melvin Forest;03/26/2016;10:25;2;0;0;SETMAG;1;;;M;;;;;;;;;;;;;B/G/M
+57;57F;Melvin Forest;03/26/2016;10:25;2;0;0;PSIMOR;1;;;;;;;;;;;;;;;;B/G/M
+57;57F;Melvin Forest;03/26/2016;10:25;2;0;0;PSAMON;2;;;;;;;;;;;;;;;;B/G/M
+57;57F;Melvin Forest;03/26/2016;10:25;2;0;0;PSAWAG;1;;;;;;;;;;;;;;;;B/G/M
+57;57F;Melvin Forest;03/26/2016;10:25;2;0;0;GLABRA;1;;;;;;;;;;;;;;;;B/G/M
+57;57F;Melvin Forest;03/26/2016;10:25;2;0;0;MELAUR;1;;;;;;;;;;;;;;;;B/G/M
+57;57F;Melvin Forest;03/26/2016;10:25;2;0;0;BASRUF;1;;;;;;;;;;;;;;;;B/G/M
+3;3C;Norma Café;03/31/2016;12:00;2;0;0;SETPEN;1;;;M;;;;;;;;;;;;;G/B/M
+3;3C;Norma Café;03/31/2016;12:00;2;0;0;PITSUL;1;;;;;;;;;;;;;;;;G/B/M
+3;3C;Norma Café;03/31/2016;12:00;2;0;0;AMACYC*;1;;;;;;;;;;;;;;;;G/B/M
+3;3C;Norma Café;03/31/2016;12:00;2;0;0;DIVDIV;2;;;;;;;;;;;;;;;;G/B/M
+3;3C;Norma Café;03/31/2016;12:00;2;0;0;MELAUR;2;;;;;;;;;;;;;;;;G/B/M
+3;3C;Norma Café;03/31/2016;12:00;2;0;0;TURGRA;3;;;;;;;;;;;;;;;;G/B/M
+3;3C;Norma Café;03/31/2016;12:00;2;0;0;SETRUT;1;;;H;;;;;;;;;;;;;G/B/M
+3;3C;Norma Café;03/31/2016;12:00;2;0;0;SETMAG;1;;;M;;;;;;;;;;;;;G/B/M
+3;3C;Norma Café;03/31/2016;12:00;2;0;0;SETVIR;1;;;M;;;;;;;;;;;;;G/B/M
+3;3C;Norma Café;03/31/2016;12:00;2;0;0;CORATR;2;;;;;;;;;;;;;;;;G/B/M
+3;3C;Norma Café;03/31/2016;12:00;2;0;0;LEPSOU;2;;;;;;;;;;;;;;;;G/B/M
+3;3C;Norma Café;03/31/2016;12:00;2;0;0;GLABRA;1;;;;;;;;;;;;;;;;G/B/M
+3;3C;Norma Café;03/31/2016;12:00;2;0;0;TOLSUL;1;;;;;;;;;;;;;;;;G/B/M
+3;3C;Norma Café;03/31/2016;12:00;2;0;0;TITSEM;2;;;;;;;;;;;;;;;;G/B/M
+3;3C;Norma Café;03/31/2016;12:00;2;0;0;EUPHIR;1;;;M;;;;;;;;;;;;;G/B/M
+3;3C;Norma Café;03/31/2016;12:00;2;0;0;ICTGAL;1;;;M;;;;;;;;;;;;;G/B/M
+4;4F;Norma Fragment;03/31/2016;10:50;3;0;0;ZENASI;3;;;;;;;;;;;;;;;;B/G/M
+4;4F;Norma Fragment;03/31/2016;10:50;3;0;0;PSIMOR;1;;;;;;;;;;;;;;;;B/G/M
+4;4F;Norma Fragment;03/31/2016;10:50;3;0;0;AMARUT;1;;;;;;;;;;;;;;;;B/G/M
+4;4F;Norma Fragment;03/31/2016;10:50;3;0;0;SETPIM*;1;;;;;;;;;;;;;;;;B/G/M
+4;4F;Norma Fragment;03/31/2016;10:50;3;0;0;CAEAUR*;1;;;;;;;;;;;;;;;;B/G/M
+34;34F;Quebrada Larga;03/17/2016;09:26;2;0;0;AMACYC*;1;;;;;;;;;;;;;;;;B/G/M
+34;34F;Quebrada Larga;03/17/2016;09:26;2;0;0;TROCAL;1;;;;;;;;;;;;;;;;B/G/M
+34;34F;Quebrada Larga;03/17/2016;09:26;2;0;0;PSAMON;1;;;;;;;;;;;;;;;;B/G/M
+34;34F;Quebrada Larga;03/17/2016;09:26;2;0;0;DIVDIV;1;;;;;;;;;;;;;;;;B/G/M
+34;34F;Quebrada Larga;03/17/2016;09:26;2;0;0;GLABRA;1;;;;;;;;;;;;;;;;B/G/M
+34;34F;Quebrada Larga;03/17/2016;09:26;2;0;0;VIRSOL;1;;;;;;;;;;;;;;;;B/G/M
+34;34F;Quebrada Larga;03/17/2016;09:26;2;0;0;MYITUB;1;;;;;;;;;;;;;;;;B/G/M
+36;36F;Quebrada Larga #2;03/17/2016;08:29;1;0;0;FALRUF;1;;;;;;;;;;;;;;;;B/G/M
+36;36F;Quebrada Larga #2;03/17/2016;08:29;1;0;0;CAEAUR*;2;;;;;;;;;;;;;;;;B/G/M
+36;36F;Quebrada Larga #2;03/17/2016;08:29;1;0;0;ACCCHI;1;;;;;;;;;;;;;;;;B/G/M
+36;36F;Quebrada Larga #2;03/17/2016;08:29;1;0;0;GLABRA;1;;;;;;;;;;;;;;;;B/G/M
+36;36F;Quebrada Larga #2;03/17/2016;08:29;1;0;0;PIOSEN;1;;;;;;;;;;;;;;;;B/G/M
+36;36F;Quebrada Larga #2;03/17/2016;08:29;1;0;0;EMPFLT*;1;;;;;;;;;;;;;;;;B/G/M
+36;36F;Quebrada Larga #2;03/17/2016;08:29;1;0;0;MNIVAR;1;;;H;;;;;;;;;;;;;B/G/M
+35;35C;Quebrada Larga CF;03/17/2016;10:13;1;0;0;LEPSOU;1;;;;;;;;;;;;;;;;G/B/M
+35;35C;Quebrada Larga CF;03/17/2016;10:13;1;0;0;PSAMON;1;;;;;;;;;;;;;;;;G/B/M
+35;35C;Quebrada Larga CF;03/17/2016;10:13;1;0;0;VIRPHI;4;;;;;;;;;;;;;;;;G/B/M
+35;35C;Quebrada Larga CF;03/17/2016;10:13;1;0;0;CARPUS;1;;;M;;;;;;;;;;;;;G/B/M
+35;35C;Quebrada Larga CF;03/17/2016;10:13;1;0;0;BUTPLT*;1;;;;;;;;;;;;;;;;G/B/M
+35;35C;Quebrada Larga CF;03/17/2016;10:13;1;0;0;ZENASI;1;;;;;;;;;;;;;;;;G/B/M
+35;35C;Quebrada Larga CF;03/17/2016;10:13;1;0;0;PSIMOR;1;;;;;;;;;;;;;;;;G/B/M
+35;35C;Quebrada Larga CF;03/17/2016;10:13;1;0;0;PTETOR;2;;;;;;;;;;;;;;;;G/B/M
+35;35C;Quebrada Larga CF;03/17/2016;10:13;1;0;0;EMPFLT*;1;;;;;;;;;;;;;;;;G/B/M
+35;35C;Quebrada Larga CF;03/17/2016;10:13;1;0;0;SETVIR;3;;;2M,1H;;;;;;;;;;;;;G/B/M
+35;35C;Quebrada Larga CF;03/17/2016;10:13;1;0;0;PIRRUB;1;;;H;;;;;;;;;;;;;G/B/M
+35;35C;Quebrada Larga CF;03/17/2016;10:13;1;0;0;TITSEM;1;;;;;;;;;;;;;;;;G/B/M
+32;32F;Suntular;03/31/2016;09:55;5;0;0;GLABRA;1;;;;;;;;;;;;;;;;B/G/M
+32;32F;Suntular;03/31/2016;09:55;5;0;0;PSIMOR;2;;;;;;;;;;;;;;;;B/G/M
+32;32F;Suntular;03/31/2016;09:55;5;0;0;MELAUR;2;;;;;;;;;;;;;;;;B/G/M
+33;33F;Suntular 2;03/31/2016;09:10;5;0;0;CAEAUR*;1;;;;;;;;;;;;;;;;B/G/M
+33;33F;Suntular 2;03/31/2016;09:10;5;0;0;MEGPIT;1;;;;;;;;;;;;;;;;B/G/M
+33;33F;Suntular 2;03/31/2016;09:10;5;0;0;CYAMEL;7;;;;;;;;;;;;;;;;B/G/M
+33;33F;Suntular 2;03/31/2016;09:10;5;0;0;TITSEM;4;;;2M,2H;;;;;;;;;;;;;B/G/M
+33;33F;Suntular 2;03/31/2016;09:10;5;0;0;PSAMON;1;;;;;;;;;;;;;;;;B/G/M
+33;33F;Suntular 2;03/31/2016;09:10;5;0;0;TOLSUL;1;;;;;;;;;;;;;;;;B/G/M
+33;33F;Suntular 2;03/31/2016;09:10;5;0;0;AMACYC*;1;;;;;;;;;;;;;;;;B/G/M
+33;33F;Suntular 2;03/31/2016;09:10;5;0;0;EMPFLT*;1;;;;;;;;;;;;;;;;B/G/M
+33;33F;Suntular 2;03/31/2016;09:10;5;0;0;SARPAP;;;1;;;;;;;;;;;;;;B/G/M
+13;13F;Zapote Fragment;03/30/2016;10:15;2;0;2;PSAMON;1;;;;;;;;;;;;;;;;G/B/M
+13;13F;Zapote Fragment;03/30/2016;10:15;2;0;2;PSIMOR;1;;;;;;;;;;;;;;;;G/B/M
+13;13F;Zapote Fragment;03/30/2016;10:15;2;0;2;MELAUR;1;;;;;;;;;;;;;;;;G/B/M
+13;13F;Zapote Fragment;03/30/2016;10:15;2;0;2;SETVIR;3;;;1M,2H;;;;;;;;;;;;;G/B/M
+13;13F;Zapote Fragment;03/30/2016;10:15;2;0;2;MNIVAR;1;;;H;;;;;;;;;;;;;G/B/M
+13;13F;Zapote Fragment;03/30/2016;10:15;2;0;2;SETPEN;1;;;M;;;;;;;;;;;;;G/B/M
+31;31F;Zapote Riparian;03/30/2016;12:07;1;0;2;VERPIN;1;;;M;5;4;6;5;8;6;8;7;10;;8;8;B/G/M
+31;31F;Zapote Riparian;03/30/2016;12:07;1;0;2;PSAMON;3;;;;;;;;;;;;;;;;B/G/M
+31;31F;Zapote Riparian;03/30/2016;12:07;1;0;2;NYCALB;1;;;;;;;;;;;;;;;;B/G/M
+31;31F;Zapote Riparian;03/30/2016;12:07;1;0;2;QUIMEX;1;;;;;;;;;;;;;;;;B/G/M
+31;31F;Zapote Riparian;03/30/2016;12:07;1;0;2;SALATR;1;;;;;;;;;;;;;;;;B/G/M
+31;31F;Zapote Riparian;03/30/2016;12:07;1;0;2;PSAWAG;7;;;;;;;;;;;;;;;;B/G/M
+31;31F;Zapote Riparian;03/30/2016;12:07;1;0;2;BASRUF;1;;;;;;;;;;;;;;;;B/G/M
+31;31F;Zapote Riparian;03/30/2016;12:07;1;0;2;VIRSOL;1;;;;;;;;;;;;;;;;B/G/M
+31;31F;Zapote Riparian;03/30/2016;12:07;1;0;2;CARPUS;1;;;;;;;;;;;;;;;;B/G/M
+31;31F;Zapote Riparian;03/30/2016;12:07;1;0;2;SETCIT;1;;;M;;;;;;;;;;;;;B/G/M
+31;31F;Zapote Riparian;03/30/2016;12:07;1;0;2;CHLCAV*;1;;;H;;;;;;;;;;;;;B/G/M

@@ -1,0 +1,190 @@
+---
+title: "Proyecto final R, capacitación hidrobiología"
+author: "Zury Carcamo"
+format: html
+editor: visual
+---
+
+::: panel-tabset
+## Asignación clase 1
+
+Ingreso de datos, Limpieza y filtrado de datos
+
+#cargar paquete
+
+```{r}
+library(tidyverse)
+```
+
+Cargar base de datos
+
+```{r}
+penguins<- read.csv("data/penguins_size.csv")
+```
+
+Filtrado de datos
+
+```{r}
+penguinsSexoHembra<-penguins %>%
+  filter(sex== "FEMALE")
+table(penguinsSexoHembra$sex)
+```
+
+Visualizar las islas
+
+```{r}
+table(penguins$island)
+
+ table(penguins$sex) 
+
+table(penguins$species)
+```
+
+Seleccionar variables
+
+```{r}
+penguins2<- penguins %>% 
+  select(island) %>% 
+  filter(island=="Dream") 
+head(penguins2) 
+str(penguins2)
+table(penguins2$island)
+```
+
+Resumen por sexo y por isla
+
+```{r}
+penguinsS<- penguins %>%
+  group_by(island, sex) %>%
+  summarise(mediapeso= mean(body_mass_g)) 
+penguinsS
+```
+
+## Asignación clase 2
+
+Uso R Markdow y visualización de datos
+
+Cargar base de datos
+
+```{r}
+catrate <- read.csv("data/catrate.csv")
+```
+
+```{r}
+head(catrate)
+```
+
+```{r}
+catrate2 <- catrate %>%
+  mutate(year = as.factor(years)) %>%
+  select (year, pond, cat.rate) %>%
+  ggplot(aes(x = year, y = cat.rate)) +
+  labs(title = "Cat Rate anual")+
+  geom_bar(stat = "identity", fill = "darkgrey") +
+  theme_light()
+
+catrate2
+```
+
+
+
+## Asignación clase 3 
+
+Procesamiento de datos
+
+Cargar paquete
+
+```{r}
+library(tidyverse)
+```
+
+Cargar base de datos
+
+```{r}
+visita1 <- read.csv2("data//Replic1_birds.csv")
+
+ visita2 <- read.csv2("data/Replic2_birds.csv") 
+
+visita3<- read.csv2("data/Replic3_birds.csv")
+
+view(visita1)
+```
+
+Renombrar variables
+
+```{r}
+visitaClean <- visita1 %>% rename("Sitio" = "Site", "HabitatSitio" = "Sitio..", "Fecha" = "Fecha..m.d.a.", "Abundancia" = "Num..0.50", "Hora" = "Hora.0.00.24.00.") %>% select(Especies, Sitio, HabitatSitio, Abundancia, Fecha, Hora, Rio, Viento, Cielo, Sequence) 
+```
+
+```{r}
+visitaclean2 <- visita2 %>% rename("Sitio" = "Sitio..", "HabitatSitio" = "Sitio...1", "Fecha" = "Fecha..m.d.a.", "Abundancia" = "Num..0.50", "Hora" = "Hora.0.00.24.00.") %>% select(Especies, Sitio, HabitatSitio, Abundancia, Fecha, Hora, Rio, Viento, Cielo, Sequence)
+```
+
+```{r}
+Visitaclean3 <- visita3 %>% rename("Sitio" = "Sitio..", "HabitatSitio" = "Sitio...1", "Fecha" = "Fecha..m.d.a.", "Abundancia" = "Num..0.50", "Hora" = "Hora.0.00.24.00.") %>% select(Especies, Sitio, HabitatSitio, Abundancia, Fecha, Hora, Rio, Viento, Cielo, Sequence)
+```
+
+Unir bases de datos, mismas variables, mismo orden, y mismo nombres de variables
+
+```{r}
+AvesCompleta <- rbind(visitaClean, visitaclean2, Visitaclean3)
+```
+
+```{r}
+head(AvesCompleta) 
+Avesvegan <- AvesCompleta %>% 
+  group_by(Especies, Sitio, HabitatSitio, Fecha, Hora, Cielo, Viento, Rio) %>% 
+  summarise(Abundancia = max(Abundancia)) %>%
+  pivot_wider(names_from = Especies, values_from = Abundancia, values_fill = 0)
+```
+
+Cargar base de datos de vegetación
+
+```{r}
+Arboles <- read.csv2("data/TreesQ.csv") 
+Habitat <- read.csv2("data/VegData.csv")
+Cobertura <- read.csv2("data/HistQ.csv")
+```
+
+Tabla nueva que tenga los Area basal
+
+```{r}
+AreaBasal <- Arboles %>%
+  group_by(VEGID) %>%
+  summarise(Area_Basal = 2*(A* 0.1 + B* 0.3 + C* 0.8 + D*1.8 + E*3.1 + F *4.9 + G*7.1 + H*0.05 )) %>%
+  summarise(Area_Basal = sum(Area_Basal))
+
+```
+
+Crear variable de covertura
+
+```{r}
+CoberturaSunm <- Cobertura %>% group_by(VEGID) %>% summarise(Group_cover = sum(A, na.rm = TRUE)+sum(B, na.rm = TRUE)+sum(C, na.rm = TRUE), Subcanopy = sum(D, na.rm = TRUE) + sum(E, na.rm = TRUE))
+head(CoberturaSunm)
+```
+
+Unir variables de vegetación
+
+```{r}
+HabitatFull <- Habitat %>% left_join(AreaBasal, by = "VEGID") %>% left_join(CoberturaSunm, by = "VEGID")
+```
+
+Unir variables de vegetación con aves
+
+```{r}
+AvesVegetacion <- HabitatFull %>%
+  mutate(Sitio = factor(Site)) %>%
+  full_join(Avesvegan, by = "Sitio")
+```
+
+```{r}
+ggplot(data = AvesVegetacion, aes(x = Area_Basal, y= PIOSEN)) +
+  geom_point(aes(color= Type))+
+  stat_smooth(method = glm,
+              method.args = list(family = "poisson"),
+              aes(fill = Type)) +
+  theme_classic()
+```
+:::
+
+

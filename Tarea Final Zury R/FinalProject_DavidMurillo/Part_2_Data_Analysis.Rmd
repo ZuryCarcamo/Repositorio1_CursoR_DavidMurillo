@@ -1,0 +1,320 @@
+---
+title: "Part 2: Data Analysis"
+author: "David Murillo"
+date: 'December 4, 2022'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# complete data analysis on the Delomys species data {.tabset .tabset-pills}
+
+## Data Exploration
+
+### Numerical Exploration
+
+```{r, include= FALSE}
+require(here)
+delomys <- read.csv(here("data", "delomys.csv"))
+
+```
+
+Create a code chunk that includes the following:
+
+- Use summary() on the body mass and body length data columns in the Delomys data set to display summary statistics.
+
+```{r}
+summary(delomys[, c("body_mass", "body_length")])
+```
+
+- Perform a test of normality on the body mass and length columns. You can use shapiro.test()
+
+```{r}
+shapiro.test(delomys$body_mass)
+
+shapiro.test(delomys$body_length)
+```
+
+### Graphical Exploration
+
+Using code chunks, create the following plots, which you’ll use to answer the report questions:
+
+- A scatterplot of body mass and body length
+
+```{r, fig.align='center', fig.width= 6, fig.height= 4, echo=FALSE}
+plot(body_mass ~ body_length, data= delomys,
+     main = "Scatterplot of body mass with body length",
+     ylab = "Body length (mm)",
+     xlab = "Body length (mm)",
+     pch = 20,
+     cex= 1.5)
+```
+
+
+- A histogram of body mass
+
+```{r, fig.align='center', fig.width= 6, fig.height= 4, echo=FALSE}
+hist(delomys$body_mass,
+     main = "Histogram of body mass",
+     xlab = "Body length (mm)",
+     breaks = 20,
+     xlim = c(0,120),
+     ylim = c(0, 250))
+```
+
+- A histogram of body length
+
+```{r, fig.align='center', fig.width= 6, fig.height= 4, echo=FALSE}
+hist(delomys$body_length,
+     main = "Histogram of body length",
+     xlab = "Body length (mm)",
+     breaks = 20,
+     xlim = c(40,170),
+     ylim = c(0, 550))
+```
+
+
+- A conditional boxplot of body mass, conditioned on species (column binomial)
+
+```{r, fig.align='center', fig.width= 6, fig.height= 4, echo=FALSE}
+
+boxplot(body_mass ~ binomial, data= delomys,
+        main = "Body mass by species",
+        xlab = "Species",
+        ylab = "Body mass (mm)")
+
+```
+
+- A conditional boxplot of body mass, conditioned on sex (column binomial)
+
+```{r, fig.align='center', fig.width= 6, fig.height= 4, echo=FALSE}
+
+boxplot(body_mass ~ sex, data= delomys,
+        main = "Body mass by sex",
+        xlab = "Sex",
+        ylab = "Body mass (mm)")
+
+```
+- A conditional boxplot of body mass, conditioned on both species and sex
+
+```{r, fig.align='center', fig.width= 9, fig.height= 6, echo=FALSE}
+
+boxplot(body_mass ~ binomial + sex, data= delomys,
+        main = "Body mass by species and sex",
+        xlab = "",
+        ylab = "Body mass (mm)",
+        names = c("Delomys dorsalis\n female", "Delomys sublineatus\n female","Delomys dorsalis\n male","Delomys sublineatus\n male"))
+
+```
+
+### Questions
+
+**Q1 (2 pts.): Qualitatively describe the relationship between body mass and length.**
+
+**Does the relationship seem linear, curved, nonexistent?**
+
+*Answer: *
+
+**Q2 (2 pts.): Qualitatively describe the shapes of the histograms.**
+
+**Do the data appear normally-distributed? Explain why or why not.**
+
+*Answer: *
+
+**Q3 (3 pts.): Using both the histograms and normality tests, do you think the (unconditioned) body masses and body length are normally-distributed?**
+
+**Contrast your visual assessment of normality to the results of the numerical normality tests.**
+
+*Answer: *
+
+**Q4 (2 pts.): Examine the conditional boxplots. Describe any graphical evidence you see for body mass differences based on species and/or sex.**
+
+*Answer: *
+
+
+
+## Model Building
+
+Using a code chunk, fit 5 models using lm():
+
+- Model 1: simple linear regression body_length ~ body_mass
+- Model 2: 1-way ANOVA body_mass ~ sex
+- Model 3: 1-way ANOVA body_mass ~ binomial
+- Model 4: 2-way additive ANOVA body_mass ~ sex + binomial
+- Model 5: 2-way factorial ANOVA body_mass ~ sex * binomial
+
+```{r}
+fit1 <- lm(body_length ~ body_mass, data= delomys)
+fit2 <- lm(body_mass ~ sex, data= delomys)
+fit3 <- lm(body_mass ~ binomial, data= delomys)
+fit4 <- lm(body_mass ~ sex + binomial, data= delomys)
+fit5 <- lm(body_mass ~ sex * binomial, data= delomys)
+```
+
+
+## Model Diagnostics
+
+Let’s check whether our models fulfill the assumption of normality of the residuals.
+
+First, use a graphical approach: plot histograms of the model residuals.
+
+```{r}
+par(mfrow = c(2,3))
+
+hist(residuals(fit1), 
+     breaks = 20, 
+     main = "Model fit1",
+     xlab = "Residuals")
+
+hist(residuals(fit2), 
+     breaks = 20, 
+     main = "Model fit2",
+     xlab = "Residuals")
+
+hist(residuals(fit3), 
+     breaks = 20, 
+     main = "Model fit3",
+     xlab = "Residuals")
+
+hist(residuals(fit4), 
+     breaks = 20, 
+     main = "Model fit4",
+     xlab = "Residuals")
+
+hist(residuals(fit5), 
+     breaks = 20, 
+     main = "Model fit5",
+     xlab = "Residuals")
+```
+
+
+Next, use shapiro.test() on each model to test the null hypothesis that the residuals are drawn from a normally-distributed population.
+
+```{r}
+shapiro.test(residuals(fit1))
+shapiro.test(residuals(fit2))
+shapiro.test(residuals(fit3))
+shapiro.test(residuals(fit4))
+shapiro.test(residuals(fit5))
+```
+
+
+### Questions
+
+**Q5 (2 pts.): What do you conclude about residual normality based on the numerical and graphical diagnostics?**
+
+*Answer: *
+
+**Q6 (1 pt.): Are violations of the normality assumption equally severe for all the models?**
+
+*Answer: *
+
+## Model Interpretation
+
+You can use the following code within a code chunk to print out a nicely formatted model coefficient table:
+
+knitr::kable(coef(summary(my_model_fit)))
+
+where my_model_fit is the name of your fitted model object.
+
+You can use similar syntax to print a nicely formatted ANOVA table: knitr::kable(anova(my_model_fit))
+
+Check out the digits argument to control how many decimal digits are printed.
+
+### Body Length 
+
+Print the model coefficient table using summary() and answer the following:
+
+```{r}
+knitr::kable(coef(summary(fit1)), digits = 3)
+```
+
+
+**Q7 (2 pts.): What is the magnitude of the mass/length relationship?**
+
+*Answer: *
+
+**Q8 (2 pts.): What is the expected body length of an an animal that weighs 100g?**
+
+*Answer: *
+
+**Q9 (2 pts.): What is the expected body length of an animal that weighs 0g?**
+
+*Answer: *
+
+### Body Mass: Model Coefficients
+
+Print the model coefficient tables for each of the body mass model fits.
+
+```{r}
+knitr::kable(coef(summary(fit2)), digits = 3)
+knitr::kable(coef(summary(fit3)), digits = 3)
+knitr::kable(coef(summary(fit4)), digits = 3)
+knitr::kable(coef(summary(fit5)), digits = 3)
+```
+
+
+**Q10 (1 pt.): What is the base level for sex?**
+
+*Answer: *
+
+**Q11 (1 pt.): What is the base level for binomial?**
+
+*Answer; *
+
+**Q12 (1 pt.): Which sex is heavier?**
+
+*Answer: *
+
+**Q13 (1 pt.): Which species is heavier?**
+
+*Answer: *
+
+### Body Mass: ANOVA
+
+Print the ANOVA tables for each of the body mass models.
+
+```{r}
+knitr::kable(anova(fit2), digits = 3)
+knitr::kable(anova(fit3), digits = 3)
+knitr::kable(anova(fit4), digits = 3)
+knitr::kable(anova(fit5), digits = 3)
+```
+
+
+**Q14 (1 pt.): Are sex and species significant predictors for body mass?**
+
+*Answer: *
+
+**Q15 (1 pt.): Is there a significant interaction?**
+
+*Answer: *
+
+**Q16 (2 pts.): How dos the significance (as measured by p-value) of either of the main effects (sex and species) differ between the single-predictor models, the additive model, and the interactive model?**
+
+*Answer: *
+
+## Model Comparison: Body Mass
+
+You built four different models of body mass. How do you choose the best one?
+
+One option is to choose the model with the lowest AIC. You can calculate AIC using the appropriately named AIC() function.
+
+Create a code chunk that calculates the AIC values for each of the body mass models.
+
+```{r}
+knitr::kable( AIC(fit1, fit2, fit3, fit4, fit5))
+```
+
+
+**Q17 (1 pt.): Which two models have the lowest AIC?**
+
+*Answer: *
+
+**Q18 (4 pts.): Which of the two models with lowest AIC scores would you select?**
+
+**Explain your decision based on model fit and the complexity/understanding tradeoff.**
+
+*Answer: *

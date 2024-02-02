@@ -1,0 +1,17 @@
+---
+title: "Final Project"
+author: "David Murillo"
+date: 'December 11, 2022'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Components
+
+[Final Project: R Reference Guide](final_R_reference.html)
+
+[Final Project: Data Analysis](Part_2_Data_Analysis.html)
+

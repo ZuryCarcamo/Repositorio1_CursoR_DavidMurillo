@@ -1,0 +1,11 @@
+bird_id,sex,breed_stage,breed_status,nest_lat,nest_lon
+LAAL01,male,brood,NA,NA,-118.39
+LAAL02,NA,post-brood,Success,32.38,-140.8303
+LAAL03,male,incubation,Failure,NA,NA
+LAAL04,unknown,brood,NA,NA,NA
+LAAL05,NA,NA,Failure,32.46,NA
+LAAL06,female,post-brood,NA,NA,NA
+1,male,post-brood,Success,NA,-118.292
+2,female,brood,NA,32.08,NA
+4,NA,incubation,Success,NA,-140.09169
+4E8,female,post-brood,NA,33.38,NA

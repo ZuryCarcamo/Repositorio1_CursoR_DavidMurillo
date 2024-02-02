@@ -1,0 +1,682 @@
+{
+    "name": "seabird-tracking",
+    "schema": "tabular-data-package",
+    "profile": "tabular-data-package",
+    "institution": "Grupo de Ecología y Conservación de Islas",
+    "skip_checks": "duplicate-row",
+    "resources": [
+        {
+            "path": "gls-albatros-guadalupe.csv",
+            "profile": "tabular-data-resource",
+            "name": "gls-albatros-guadalupe",
+            "titulo": "Rastreo de GLS para albatros de Laysan en Isla Guadalupe",
+            "title": "GLS tracking for Laysan albatross in Guadalupe Island",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "date",
+                        "type": "date",
+                        "format": "%Y-%m-%d",
+                        "nombre_largo": "Fecha",
+                        "long_name": "Date",
+                        "constraints": {
+                            "minimum": "2016-05-28",
+                            "maximum": "2018-02-12"
+                        }
+                    },
+                    {
+                        "name": "latitude",
+                        "type": "number",
+                        "format": "default",
+                        "nombre_largo": "Latitud",
+                        "long_name": "Latitude",
+                        "constraints": {
+                            "minimum": "-19.8",
+                            "maximum": "79.65"
+                        }
+                    },
+                    {
+                        "name": "longitude",
+                        "type": "number",
+                        "format": "default",
+                        "nombre_largo": "Longitud",
+                        "long_name": "Longitude",
+                        "constraints": {
+                            "minimum": "-179.9706",
+                            "maximum": "179.8683"
+                        }
+                    },
+                    {
+                        "name": "name",
+                        "type": "string",
+                        "format": "default",
+                        "nombre_largo": "Identificador de ave",
+                        "long_name": "Bird ID",
+                        "constraints": {
+                            "enum": [
+                                "A332",
+                                "A333",
+                                "A334",
+                                "A337",
+                                "A338",
+                                "A339",
+                                "A341"
+                            ]
+                        }
+                    }
+                ],
+                "missingValues": [
+                    "NA"
+                ]
+            }
+        },
+        {
+            "path": "gls-pardela-san-benito.csv",
+            "profile": "tabular-data-resource",
+            "name": "gls-pardela-san-benito",
+            "titulo": "Rastreo de GLS para pardela mexicana en Isla San Benito",
+            "title": "GLS tracking for black-vented shearwater in San Benito Island",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "date",
+                        "type": "date",
+                        "format": "%Y-%m-%d",
+                        "nombre_largo": "Fecha",
+                        "long_name": "Date",
+                        "constraints": {
+                            "minimum": "2016-04-21",
+                            "maximum": "2017-07-11"
+                        }
+                    },
+                    {
+                        "name": "latitude",
+                        "type": "number",
+                        "format": "default",
+                        "nombre_largo": "Latitud",
+                        "long_name": "Latitude",
+                        "constraints": {
+                            "minimum": "20.25",
+                            "maximum": "38.36"
+                        }
+                    },
+                    {
+                        "name": "longitude",
+                        "type": "number",
+                        "format": "default",
+                        "nombre_largo": "Longitud",
+                        "long_name": "Longitude",
+                        "constraints": {
+                            "minimum": "-129",
+                            "maximum": "-97.39"
+                        }
+                    },
+                    {
+                        "name": "name",
+                        "type": "string",
+                        "format": "default",
+                        "nombre_largo": "Identificador de ave",
+                        "long_name": "Bird ID",
+                        "constraints": {
+                            "enum": [
+                                "A353",
+                                "A354",
+                                "A356",
+                                "D205",
+                                "D206",
+                                "D210",
+                                "D211",
+                                "44290"
+                            ]
+                        }
+                    }
+                ],
+                "missingValues": [
+                    "NA"
+                ]
+            }
+        },
+        {
+            "path": "gls-pardela-guadalupe.csv",
+            "profile": "tabular-data-resource",
+            "name": "gls-pardela-guadalupe",
+            "titulo": "Rastreo de GLS para pardela mexicana en Isla Guadalupe",
+            "title": "GLS tracking for black-vented shearwater in Guadalupe Island",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "date",
+                        "type": "date",
+                        "format": "%Y-%m-%d",
+                        "nombre_largo": "Fecha",
+                        "long_name": "Date",
+                        "constraints": {
+                            "minimum": "2016-06-28",
+                            "maximum": "2018-07-04"
+                        }
+                    },
+                    {
+                        "name": "latitude",
+                        "type": "number",
+                        "format": "default",
+                        "nombre_largo": "Latitud",
+                        "long_name": "Latitude",
+                        "constraints": {
+                            "minimum": "19.8",
+                            "maximum": "39.15"
+                        }
+                    },
+                    {
+                        "name": "longitude",
+                        "type": "number",
+                        "format": "default",
+                        "nombre_largo": "Longitud",
+                        "long_name": "Longitude",
+                        "constraints": {
+                            "minimum": "-129.60324",
+                            "maximum": "-105.40106"
+                        }
+                    },
+                    {
+                        "name": "name",
+                        "type": "string",
+                        "format": "default",
+                        "nombre_largo": "Identificador de ave",
+                        "long_name": "Bird ID",
+                        "constraints": {
+                            "enum": [
+                                "D198",
+                                "D291",
+                                "D295",
+                                "D425",
+                                "D428",
+                                "D430",
+                                "D426"
+                            ]
+                        }
+                    }
+                ],
+                "missingValues": [
+                    "NA"
+                ]
+            }
+        },
+        {
+            "path": "gls-pardela-natividad.csv",
+            "profile": "tabular-data-resource",
+            "name": "gls-pardela-natividad",
+            "titulo": "Rastreo de GLS para pardela mexicana en Isla Natividad",
+            "title": "GLS tracking for black-vented shearwater in Natividad Island",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "date",
+                        "type": "date",
+                        "format": "%Y-%m-%d",
+                        "nombre_largo": "Fecha",
+                        "long_name": "Date",
+                        "constraints": {
+                            "minimum": "2017-06-18",
+                            "maximum": "2018-05-14"
+                        }
+                    },
+                    {
+                        "name": "latitude",
+                        "type": "number",
+                        "format": "default",
+                        "nombre_largo": "Latitud",
+                        "long_name": "Latitude",
+                        "constraints": {
+                            "minimum": "22.08037",
+                            "maximum": "34.62145"
+                        }
+                    },
+                    {
+                        "name": "longitude",
+                        "type": "number",
+                        "format": "default",
+                        "nombre_largo": "Longitud",
+                        "long_name": "Longitude",
+                        "constraints": {
+                            "minimum": "-124.17013",
+                            "maximum": "-112.9976"
+                        }
+                    },
+                    {
+                        "name": "name",
+                        "type": "string",
+                        "format": "default",
+                        "nombre_largo": "Identificador de ave",
+                        "long_name": "Bird ID",
+                        "constraints": {
+                            "enum": [
+                                "D310"
+                            ]
+                        }
+                    }
+                ],
+                "missingValues": [
+                    "NA"
+                ]
+            }
+        },
+        {
+            "path": "gps-albatros-guadalupe.csv",
+            "profile": "tabular-data-resource",
+            "name": "gps-albatros-guadalupe",
+            "titulo": "Rastreo de GPS para albatros de Laysan en Isla Guadalupe",
+            "title": "GPS tracking for Laysan albatross in Guadalupe Island",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "date",
+                        "type": "date",
+                        "format": "%Y-%m-%d",
+                        "nombre_largo": "Fecha",
+                        "long_name": "Date",
+                        "constraints": {
+                            "minimum": "2014-01-19",
+                            "maximum": "2018-02-25"
+                        }
+                    },
+                    {
+                        "name": "latitude",
+                        "type": "number",
+                        "format": "default",
+                        "nombre_largo": "Latitud",
+                        "long_name": "Latitude",
+                        "constraints": {
+                            "minimum": "25.93368",
+                            "maximum": "51.25798"
+                        }
+                    },
+                    {
+                        "name": "longitude",
+                        "type": "number",
+                        "format": "default",
+                        "nombre_largo": "Longitud",
+                        "long_name": "Longitude",
+                        "constraints": {
+                            "minimum": "-158.9806",
+                            "maximum": "-114.4268"
+                        }
+                    },
+                    {
+                        "name": "name",
+                        "type": "string",
+                        "format": "default",
+                        "nombre_largo": "Identificador de ave",
+                        "long_name": "Bird ID"
+                    }
+                ],
+                "foreignKeys": [
+                {
+                    "fields": "name",
+                    "reference": {
+                        "resource": "breeding_status_albatross_guadalupe",
+                        "fields": "bird_id"
+                    }
+                }
+                ],
+                "missingValues": [
+                    "NA"
+                ]
+            }
+        },
+        {
+            "path": "gps-alcuela-san-roque.csv",
+            "profile": "tabular-data-resource",
+            "name": "gps-alcuela-san-roque",
+            "titulo": "Rastreo de GPS para alcuela oscura en Isla San Roque",
+            "title": "GPS tracking for Cassin's auklet in San Roque Island",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "date",
+                        "type": "date",
+                        "format": "%Y-%m-%d",
+                        "nombre_largo": "Fecha",
+                        "long_name": "Date",
+                        "constraints": {
+                            "minimum": "2018-05-16",
+                            "maximum": "2018-05-26"
+                        }
+                    },
+                    {
+                        "name": "latitude",
+                        "type": "number",
+                        "format": "default",
+                        "nombre_largo": "Latitud",
+                        "long_name": "Latitude",
+                        "constraints": {
+                            "minimum": "26.9853",
+                            "maximum": "27.159025"
+                        }
+                    },
+                    {
+                        "name": "longitude",
+                        "type": "number",
+                        "format": "default",
+                        "nombre_largo": "Longitud",
+                        "long_name": "Longitude",
+                        "constraints": {
+                            "minimum": "-114.4088",
+                            "maximum": "-114.1156"
+                        }
+                    },
+                    {
+                        "name": "name",
+                        "type": "string",
+                        "format": "default",
+                        "nombre_largo": "Identificador de ave",
+                        "long_name": "Bird ID",
+                        "constraints": {
+                            "enum": [
+                                "48604_1",
+                                "48604_2",
+                                "48608",
+                                "48647"
+                            ]
+                        }
+                    }
+                ],
+                "missingValues": [
+                    "NA"
+                ]
+            }
+        },
+        {
+            "path": "gps-pardela-guadalupe.csv",
+            "profile": "tabular-data-resource",
+            "name": "gps-pardela-guadalupe",
+            "titulo": "Rastreo de GPS para pardela mexicana en Isla Guadalupe",
+            "title": "GPS tracking for black-vented shearwater in Guadalupe Island",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "date",
+                        "type": "date",
+                        "format": "%Y-%m-%d",
+                        "nombre_largo": "Fecha",
+                        "long_name": "Date",
+                        "constraints": {
+                            "minimum": "2018-01-06",
+                            "maximum": "2018-08-07"
+                        }
+                    },
+                    {
+                        "name": "latitude",
+                        "type": "number",
+                        "format": "default",
+                        "nombre_largo": "Latitud",
+                        "long_name": "Latitude",
+                        "constraints": {
+                            "minimum": "28.50561",
+                            "maximum": "31.7199"
+                        }
+                    },
+                    {
+                        "name": "longitude",
+                        "type": "number",
+                        "format": "default",
+                        "nombre_largo": "Longitud",
+                        "long_name": "Longitude",
+                        "constraints": {
+                            "minimum": "-118.5609",
+                            "maximum": "-115.0392"
+                        }
+                    },
+                    {
+                        "name": "name",
+                        "type": "string",
+                        "format": "default",
+                        "nombre_largo": "Identificador de ave",
+                        "long_name": "Bird ID",
+                        "constraints": {
+                            "enum": [
+                                "MR8146",
+                                "MR8153",
+                                "MR8181",
+                                "MR4189"
+                            ]
+                        }
+                    }
+                ],
+                "missingValues": [
+                    "NA"
+                ]
+            }
+        },
+        {
+            "path": "gps-pardela-natividad-san-benito.csv",
+            "profile": "tabular-data-resource",
+            "name": "gps-pardela-natividad-san-benito",
+            "titulo": "Rastreo de GPS para pardela mexicana en Islas Natividad y San Benito",
+            "title": "GPS tracking for black-vented shearwater in Natividad and San Roque Islands",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "date",
+                        "type": "date",
+                        "format": "%Y-%m-%d",
+                        "nombre_largo": "Fecha",
+                        "long_name": "Date",
+                        "constraints": {
+                            "minimum": "2016-05-24",
+                            "maximum": "2017-07-11"
+                        }
+                    },
+                    {
+                        "name": "latitude",
+                        "type": "number",
+                        "format": "default",
+                        "nombre_largo": "Latitud",
+                        "long_name": "Latitude",
+                        "constraints": {
+                            "minimum": "27.71934",
+                            "maximum": "31.59382"
+                        }
+                    },
+                    {
+                        "name": "longitude",
+                        "type": "number",
+                        "format": "default",
+                        "nombre_largo": "Longitud",
+                        "long_name": "Longitude",
+                        "constraints": {
+                            "minimum": "-116.8185",
+                            "maximum": "-114.1414"
+                        }
+                    },
+                    {
+                        "name": "name",
+                        "type": "string",
+                        "format": "default",
+                        "nombre_largo": "Identificador de ave",
+                        "long_name": "Bird ID",
+                        "constraints": {
+                            "enum": [
+                                "BVSH01",
+                                "BVSH02",
+                                "BVSH03",
+                                "BVSH04",
+                                "BVSH05",
+                                "44290"
+                            ]
+                        }
+                    }
+                ],
+                "missingValues": [
+                    "NA"
+                ]
+            }
+        },
+        {
+            "path": "breeding_status_albatross_guadalupe.csv",
+            "profile": "tabular-data-resource",
+            "name": "breeding_status_albatross_guadalupe",
+            "titulo": "Estado reproductivo de individuos de albatros de Laysan en Isla Guadalupe",
+            "title": "Breeding status of Laysan Albatross individuals on Guadalupe Island",
+            "common_name": "Laysan albatross",
+            "site_name": "Mexico",
+            "colony_name": "Isla Guadalupe",
+            "lat_colony": 28.8841,
+            "lon_colony": -118.2916,
+            "device": "GPS",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "bird_id",
+                        "type": "string",
+                        "format": "default",
+                        "nombre_largo": "Identificador de ave",
+                        "long_name": "Bird ID",
+                        "description": "Insert the ID number of the bird (e.g. band number of GPS number if one GPS device was used per bird)",
+                        "constraints": {
+                            "enum": [
+                                "LAAL01",
+                                "LAAL02",
+                                "LAAL03",
+                                "LAAL04",
+                                "LAAL05",
+                                "LAAL06",
+                                "LAAL07",
+                                "LAAL08",
+                                "LAAL09",
+                                "LAAL10",
+                                "LAAL11",
+                                "LAAL12",
+                                "LAAL13",
+                                "LAAL14",
+                                "LAAL15",
+                                "LAAL16",
+                                "LAAL17",
+                                "LAAL18",
+                                "LAAL19",
+                                "LAAL20",
+                                "LAAL21",
+                                "1",
+                                "2",
+                                "4",
+                                "7",
+                                "8",
+                                "10",
+                                "2A2",
+                                "E19",
+                                "2H7",
+                                "K54",
+                                "5E1",
+                                "4J1",
+                                "3H9",
+                                "5E0",
+                                "E09",
+                                "3A6",
+                                "9H8",
+                                "1J4",
+                                "4J0",
+                                "3C3",
+                                "3H4",
+                                "7E4",
+                                "C99",
+                                "5E4",
+                                "J74",
+                                "4E8"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "sex",
+                        "type": "string",
+                        "format": "default",
+                        "nombre_largo": "Sexo",
+                        "long_name": "Sex",
+                        "constraints": {
+                            "enum": [
+                                "male",
+                                "female",
+                                "unknown"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "breed_stage",
+                        "type": "string",
+                        "format": "default",
+                        "nombre_largo": "Etapa reproductiva",
+                        "long_name": "Breed stage",
+                        "constraints": {
+                            "enum": [
+                                "incubation",
+                                "brood",
+                                "post-brood"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "breed_status",
+                        "type": "string",
+                        "format": "default",
+                        "nombre_largo": "Estado reproductivo",
+                        "long_name": "Breed status",
+                        "description": "if the bird failed while it was being tracked then put this information in here.",
+                        "constraints": {
+                            "enum": [
+                                "Success",
+                                "Failure"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "nest_lat",
+                        "type": "number",
+                        "format": "default",
+                        "nombre_largo": "Latitud del nido",
+                        "long_name": "Nest latitude",
+                        "description": "Bird's nest latitude in decimal degrees"
+                    },
+                    {
+                        "name": "nest_lon",
+                        "type": "number",
+                        "format": "default",
+                        "nombre_largo": "Longitud del nido",
+                        "long_name": "Nest longitude",
+                        "description": "Bird's nest longitude in decimal degrees"
+                    }
+                ],
+                "primaryKey": [
+                    "bird_id"
+                ],
+                "missingValues": [
+                    "NA"
+                ]
+            }
+        }
+    ]
+}
