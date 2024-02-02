@@ -64,6 +64,31 @@ penguinsS
 
 Uso R Markdow y visualización de datos
 
+Cargar base de datos
+
+```{r}
+catrate <- read.csv("data/catrate.csv")
+```
+:::
+
+```{r}
+head(catrate)
+```
+
+```{r}
+catrate2 <- catrate %>%
+  mutate(year = as.factor(years)) %>%
+  select (year, pond, cat.rate) %>%
+  ggplot(aes(x = year, y = cat.rate)) +
+  labs(title = "Cat Rate anual")+
+  geom_bar(stat = "identity", fill = "darkgrey") +
+  theme_light()
+
+catrate2
+```
+
+::: panel-tabset
+
 ## Asignación clase 3
 
 Procesamiento de datos
