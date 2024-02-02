@@ -87,7 +87,7 @@ catrate2 <- catrate %>%
 catrate2
 ```
 
-::: panel-tabset
+
 ## Asignación clase 3
 
 Procesamiento de datos
