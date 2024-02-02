@@ -87,8 +87,7 @@ catrate2 <- catrate %>%
 catrate2
 ```
 
-
-## Asignación clase 3
+## Asignacion clase 3
 
 Procesamiento de datos
 
@@ -186,5 +185,4 @@ ggplot(data = AvesVegetacion, aes(x = Area_Basal, y= PIOSEN)) +
   theme_classic()
 ```
 
-## 
 :::
