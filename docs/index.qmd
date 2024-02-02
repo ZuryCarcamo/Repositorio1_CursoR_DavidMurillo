@@ -59,7 +59,9 @@ penguinsS<- penguins %>%
   summarise(mediapeso= mean(body_mass_g)) 
 penguinsS
 ```
+:::
 
+::: panel-tabset
 ## Asignación clase 2
 
 Uso R Markdow y visualización de datos
@@ -69,7 +71,6 @@ Cargar base de datos
 ```{r}
 catrate <- read.csv("data/catrate.csv")
 ```
-:::
 
 ```{r}
 head(catrate)
@@ -86,8 +87,10 @@ catrate2 <- catrate %>%
 
 catrate2
 ```
+:::
 
-## Asignacion clase 3
+::: panel-tabset
+## Asignación clase 3 
 
 Procesamiento de datos
 
@@ -184,5 +187,6 @@ ggplot(data = AvesVegetacion, aes(x = Area_Basal, y= PIOSEN)) +
               aes(fill = Type)) +
   theme_classic()
 ```
-
 :::
+
+
