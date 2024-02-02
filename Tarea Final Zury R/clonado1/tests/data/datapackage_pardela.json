@@ -1,0 +1,46 @@
+{
+    "name": "seabird-tracking",
+    "schema": "tabular-data-package",
+    "profile": "tabular-data-package",
+    "institution": "Grupo de Ecología y Conservación de Islas",
+    "skip_checks": "duplicate-row",
+    "resources": [
+        {
+            "path": "breeding_status_pardela_honolulu.csv",
+            "profile": "tabular-data-resource",
+            "name": "breeding_status_pardela_honolulu",
+            "titulo": "Estado reproductivo de individuos de pardela de Laysan en Isla Honolulu",
+            "title": "Breeding status of Laysan pardela individuals on Honolulu Island",
+            "common_name": "Pardela",
+            "site_name": "USA",
+            "colony_name": "Isla Honolulu",
+            "lat_colony": 28.8841,
+            "lon_colony": -118.2916,
+            "device": "GPS",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "sex",
+                        "type": "string",
+                        "format": "default",
+                        "nombre_largo": "Sexo",
+                        "long_name": "Sex",
+                        "constraints": {
+                            "enum": [
+                                "male",
+                                "female",
+                                "unknown"
+                            ]
+                        }
+                    }
+                ],
+                "missingValues": [
+                    "NA"
+                ]
+            }
+        }
+    ]
+}

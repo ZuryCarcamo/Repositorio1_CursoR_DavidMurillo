@@ -1,0 +1,63 @@
+---
+title: "TareaFinal"
+format: html
+editor: "Zury Carcamo"
+---
+
+##Asignacion clase 1
+
+#Ingreso de datos, Limpieza y filtrado de datos
+
+#Cargar paquete
+
+```{r}
+library(tidyverse)
+```
+
+#base de datos “penguins_size.csv”
+
+```{r}
+penguins<- read.csv("data/penguins_size.csv")
+```
+
+#Filtrado de datos
+
+```{r}
+penguinsSexoHembra<-penguins %>%
+  filter(sex== "FEMALE")
+table(penguinsSexoHembra$sex)
+
+```
+
+#Visualizar las islas
+
+```{r}
+table(penguins$island)
+table(penguins$sex)
+table(penguins$species)
+
+```
+
+#Seleccionar variables
+
+```{r}
+penguins2<- penguins %>%
+  select(island) %>%
+  filter(island=="Dream") 
+head(penguins2)
+str(penguins2)
+table(penguins2$island)
+```
+
+#resumen por sexo y por isla
+
+```{r}
+penguinsS<- penguins %>% 
+  group_by(island, sex) %>%
+  summarise(mediapeso= mean(body_mass_g)) 
+penguinsS
+```
+
+<div>
+
+</div>

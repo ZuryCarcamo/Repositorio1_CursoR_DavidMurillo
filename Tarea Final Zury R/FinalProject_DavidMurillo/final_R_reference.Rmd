@@ -1,0 +1,689 @@
+---
+title: "final_R_reference.Rmd"
+author: "David Murillo"
+date: 'December 11, 2022'
+output: 
+       html_document:
+         css: custom.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# R Reference Guide {.tabset .tabset-pills}
+
+
+## Loading Data and Packages
+
+For data analysis it is essential to have databases, in R there are several ways to load databases from the directory of our PC. One way to load the databases is with the read.csv() function, this allows you to load files delimited by commas `,`. Likewise, this function can be accompanied by the `here()` function of the `here` package. Before load packages we need install the packages that we want, to do this we could use the function `install.packages()`, one time the package is installed, we will need load them with the function `require` or `library`. The different between them is that `require` load package one time, if the package is already loaded `require` will not reload the package this will help use to save time. 
+
+
+:::{.notes}
+
+Example 1. To use `require`, first we need installs the package `here`, and after we will use the function `require` to load the package `here`.
+
+
+```{r, eval=FALSE}
+install.packages("here")
+```
+
+
+Install.packages is the function to install a packages in R, observe that the name of the packages have to be inside of quotation marks `" "`.
+
+
+```{r, results='hide', warning=FALSE}
+require(here) 
+```
+
+
+Observe that to load a package we dot need put the package name inside quotation marks.
+
+:::
+
+
+
+Now we will to see other example to load a package, this time using `library()` function and `palmerpeguins` package.
+
+:::{.notes}
+
+
+**Example**
+
+
+```{r, eval= FALSE}
+install.packages("palmerpenguins")
+```
+
+
+Remember the name of the packages inside of quotation marks.
+
+
+```{r}
+library(palmerpenguins) 
+```
+
+
+when we use library we do not need put the packagues name inside of quotation mark.
+
+
+:::
+
+
+The package `here` was create to work with RProjects, the function `here()` let us to to load data sets in a easy way. For example, if we have a subdirectory of our main RProject directory called `data` and in the data subfolder there is a file called ginkgo_data_2021.csv containing data with value separate by comma. The function `here()` will returns the absolute path to the base directory of our RProject.
+
+To show how `here()` function works we will see a example to load the `ginkgo_data_2021.csv` data that is in our subfolder `data` of our RProject. For this example we will use the function `read.csv()` that let us to load a data set with values separate by comma.
+
+
+:::{.notes} 
+
+
+**Example** 
+
+
+```{r}
+ginkgo <- read.csv(here("data", "ginkgo_data_2021.csv"))
+```
+
+
+Observe that read.csv() function is using to load a data set with values separate by comma, and here() function is returns the absolute path to R will read our directory from our Principal folder. The dataset ginkgo_data_2021.csv now is called ginkgo in our R environment.
+
+
+:::
+
+
+## Data structures
+
+
+
+The `c()` function help us to create a vectors, every element inside the parenthesis have to be separate by comma.
+
+First we will create a numeric vector as example to explain how to works `c()` function, I will called `x` to the numeric vector.
+
+:::{.notes}
+
+**Example**
+
+```{r}
+x <- c(1, 5, 7, 8, 2, 1, 5, 6, 3, 9)
+```
+
+Observe that every value inside the parenthesis have to be separate by comma.
+ 
+Others way to make a numeric vector is with `:` between the first and last element of the vector.
+
+**Example**
+
+```{r}
+x2 <- c(1:10) 
+```
+
+
+Observe that in this time, the values are not separate by comma, this is because we are create a vector with continues values from 1 to 10
+
+
+
+Also with the function `c()` we can create a string variable, to make this every element have to be inside quotation marks `" "` and separate by comma. Let go to created a string with name of people.
+
+```{r}
+names <- c("Carlos", "David", "Elena", "Maria", "Carla",
+           "Carlos", "David", "Elena", "Maria", "Carla")
+
+names
+```
+
+Observe than the vector `names` now contain the names of people.
+
+
+:::
+
+
+One time we have learnt og to load datasets and make vector, we could want to know how many elements there are in a specific variable or vector, for example if we want to know how many elements there are in the `x` vector, we could use the function `length()` to know it. 
+
+
+:::{.notes}
+
+**Example**
+
+In the `x` vector that we created we know that there are 10 values or observation, we will confirm that with the `length()` function.
+
+
+```{r}
+length(x) 
+```
+
+
+We can see the result match with our previous assumption. 
+
+
+Now we will see how many values there are in our vector `names`
+
+
+```{r}
+length(names)
+```
+
+
+:::
+
+
+Now that we can create vector, we can go ahead and create matrices. To create a matrix we can use the `matrix()` function. To create a matrix we only need a vector and tell to R how many column and row we want for our matrix.
+
+:::{.notes}
+
+**Example**
+
+To illustrate how to create a matrix, we will create a matrix with 9 element, three columns and three rows
+
+
+```{r}
+matrix(c(1:9), ncol = 3, nrow = 3 )
+```
+
+
+If we want to change the order of the values, for example we want that the first row show the values of 1, 2 and 3 we can tell to R made than with the argument `byrow = TRUE`.
+
+**Example**
+
+
+```{r}
+matrix(c(1:9), ncol = 3, nrow = 3, byrow = TRUE )
+```
+
+:::
+
+
+Now we will learn to create a data frame using the `data.frame()` function, to illustrate how the `data.frame` function works we will use our previous variables x, x2 and names.
+
+
+:::{.notes}
+
+
+**Example**
+
+
+```{r}
+data.frame(names, x, x2) 
+```
+
+In this case names will be the first column, x the second, and x2 the third. To create this data frame, every argument must have the same numbers of observation, in this case every variable have 10 observation.
+
+:::
+
+
+If we interesting in how many rows has a data frame, we can use the function `nrow()`, if we want to know how many columns has a data frame we could use `ncol()` function, if we want to know the dimension of a data frame we can use the `dim()` function.
+
+
+:::{.notes}
+
+**Example**
+
+We will use the previous fucntions to know how many rows and columns there are in the `ginkgo` data.
+
+
+```{r}
+nrow(ginkgo) 
+```
+
+We can see that the ginkgo data set contains 756 rows
+
+```{r}
+ncol(ginkgo) 
+```
+
+We can see that the ginkgo data set contains 6 columns
+
+```{r}
+dim(ginkgo) 
+```
+
+We can see that the ginkgo data set contains 756 rows and 6 columns
+
+:::
+
+
+## Subsetting 
+
+In many occasion we will want to extract only one variable or some observation inside of a data set, there are different options in R to make this. We can use the `$` to extract only one variable every time. 
+
+
+:::{.notes}
+
+**Example**
+
+We will extract the column `seeds_present` from `ginkgo` data
+
+
+```{r}
+seeds_present <- ginkgo$seeds_present
+```
+
+Observe that the new variable `seeds_present` has the result only for the seeds_present variable. We can confirm this using the function `head()`.
+
+
+```{r}
+head(seeds_present) 
+```
+
+:::
+
+
+Other way to extract a variable from a data is using `[]`, these signals let us to select columns or rows.
+
+:::{.notes}
+
+**Example**
+
+We will select the first row of the ginkgo data
+
+```{r, eval=FALSE}
+ginkgo[1 , ] 
+```
+
+Observe that the comma separate de row from the columns, before `,` are the rows and after `,` are the columns.
+
+
+We will select the element in row 2, and column 3
+
+```{r, eval=FALSE}
+ginkgo[2, 3] 
+```
+
+Observe that 2 is the row number two, and 3 is the column number three
+
+
+Now we will select the 3rd column of the ginkgo data
+
+```{r, eval=FALSE}
+ginkgo[, 3]
+```
+
+:::
+
+
+Sometimes we will want to extract all values from a specific category level, for example in the data `penguins` form the packages `palmerpeguins`, the variable `species` has three levels `Adelie`, `Chinstrap` and,    `Gentoo` if we want to retrieve all data for Adelie penguins we can use the function `subset()` 
+
+
+:::{.notes}
+
+**Example**
+
+We will extract all the value for `Adelie` penguin from the variable `species` of the `penguin`s data
+
+```{r}
+Adelie <- subset(penguins, species == "Adelie")
+```
+
+
+Observe that, penguins is the data, species is the variable from where we want to extract all values of the Adelie specie, and Adelie has to be into quotation marks. 
+
+:::
+
+
+## Numerical Data Exploratorion
+
+Now that we know how to load packages, load data, and basic operations, we can start with some numeric data exploration, part of the numeric data exploration is the statistical summary of the data. In R we can use the `summary` function to know the name of our variables, how many observations has every variable, maximum, minimun, median, mean, standard deviation, first and third quartiles for every variable.
+
+:::{.notes}
+
+
+**Example**
+
+We will use the ginkgo data to illustrate how to use the `summary` function 
+
+```{r}
+summary(ginkgo)
+```
+
+
+**Example**
+
+
+Also we can make a summary form penguins data
+
+```{r}
+summary(penguins)
+```
+
+:::
+
+
+If we are interesting only in a specific value as the mean of one variable, we can use the `mean()` function, and we are interestinc in the standar deviation we can use the `sd()` function 
+
+
+:::{.notes}
+
+
+**Example**
+
+
+To illustrate how `mean()` and `sd()` functions works, we will use the `max_width` from `ginkgo` data.
+
+
+```{r}
+mean(ginkgo$max_width)
+```
+
+
+Observe that I am using $ to select a specific variable
+
+When we have `NA` values, we must to use `na.rm = TRUE` argument to explain to R that we know that the variable contain `NA` observations.
+
+
+```{r}
+mean(ginkgo$max_width, na.rm = TRUE) 
+```
+
+
+To get standard deviation value
+
+```{r}
+sd(ginkgo$max_width, na.rm = TRUE)
+```
+
+
+:::
+
+
+## Graphical Data exploration
+
+Into data exploration is very important to know how to make some graphic, these graphic will help us to know possible relationship our patters between variables. To made some plot in R we can use the `plot()` function. 
+
+
+:::{.notes}
+
+**Example**
+
+
+We will create a Scatterplot using the `ginkgo` data, specifically we will use the `max_depth` for the `x`, and `max_width` for `y`.
+
+```{r, fig.align='center', fig.width= 6, fig.height= 4}
+
+plot(x = ginkgo$max_depth,
+     y= ginkgo$max_width,
+     col = "green",
+     pch = 16,
+     cex = 1, 
+     main = "Scatterplot of\n maximun leaf depth and maximun leaf width",
+     xlab = "Maximun leaf depth (mm)",
+     ylab = "Maximun leaf width (mm)",
+     xlim = c(10,155),
+     ylim = c(0, 160))
+
+```
+
+Observe that:
+
+- col: is using to put a specific color of the points
+- pch: is the type of point
+- cex: is the size of the point
+- main: is using to put the title plot name
+- xlab: is using to put the x variable name
+- ylab: is using to put the y variable name
+- xlim: is using to put the limit of the variable x
+- ylim: is using to put the limit of the variable
+
+
+Lets change some parameter and style of the plot
+ 
+```{r, fig.align='center', fig.width= 6, fig.height= 4}
+
+plot(x = ginkgo$max_depth,
+     y= ginkgo$max_width,
+     col = "darkblue",
+     pch = 0,
+     cex = 0.5, 
+     main = "Scatterplot of\n maximun leaf depth and maximun leaf width",
+     xlab = "Maximun leaf depth (mm)",
+     ylab = "Maximun leaf width (mm)",
+     xlim = c(1,155),
+     ylim = c(5, 150))
+
+```
+
+
+:::
+
+
+Other very important graphic tool is the histogram, a way to make histogram in R is using the `hist()` function. 
+
+
+:::{.notes}
+
+**Example**
+
+To illustrate how `hist()` function works, we will use the flipper lengths from the penguins data.
+
+
+```{r}
+hist(penguins$flipper_length_mm,
+     breaks = 10,
+     main = "Flipper lengths histogram",
+     xlab = "Flipper lengths (mm)",
+     col = "gray")
+```
+
+Observe that:
+
+- the hist() only need one variable, is this case `penguins$flipper_length_mm`
+- breaks: make references to the number of break points in the histogram 
+- ylab: is using to put the y variable name
+- col: is using to put a specific color of the bars
+
+
+Lets change some parameter and style of the plot
+
+
+```{r}
+hist(penguins$flipper_length_mm,
+     breaks = 5,
+     main = "Flipper lengths histogram",
+     xlab = "Flipper lengths (mm)",
+     col = "darkgreen")
+```
+
+
+
+:::
+
+Another useful graphical data exploration are the boxplots, we can use the `boxplot()` function in R. 
+
+
+:::{.notes}
+
+**Example**
+
+To illustrate how to use `boxplot()` function I will use the ginkgo data.
+
+First I will make a simple boxplot of variable `petiole lengths` from the data `ginkgo` 
+
+```{r}
+boxplot(ginkgo$petiole_length,
+        main = "Simple boxplot of petiole length",
+        ylab= "petiole lengths",
+        col= "gray")
+```
+
+Observe that:
+
+- the boxplot() only need one variable, is this case `ginkgo$petiole_length`
+- col: is using to put a specific color of the box
+
+:::
+
+
+Now that we know how the function `boxplot()` works, we can made a conditional boxplot of `petiole lengths` conditioned on the `seeds_present` column.
+
+
+:::{.notes}
+
+
+**Example**
+
+
+```{r}
+boxplot(petiole_length ~ seeds_present, data= ginkgo,
+        main = "Conditional boxplot\n
+        petiole length by seeds present",
+        ylab = "Petiole length",
+        xlab = "Seed present",
+        col= "red")
+```
+
+Observe that:
+
+- the conditional boxplot() we need thwp variables separate by `~`
+- data: is the data from the variables are taken
+
+
+:::
+
+
+We know that all these plots are important, and that many times we want to see them in one window, fortunately we can do that with `par()` function in R. Lets create a figure that contain our 4 plots.
+
+:::{.notes}
+
+Before to make the plot we need specify how many columns and rows we want for our widow plot. To put the colums and rows we use the `mfrow` argument and with a vector `c` contain the number for colums and rows.
+
+
+```{r, fig.align='center'}
+
+par(mfrow= c(2,2)) # Observer that the c(2,2) mean that we want two columns and two rows 
+
+
+# Scatterplot
+
+plot(x = ginkgo$max_depth,
+     y= ginkgo$max_width,
+     col = "green",
+     pch = 16,
+     cex = 1, 
+     main = "Scatterplot of\n maximun leaf depth and maximun leaf width",
+     xlab = "Maximun leaf depth (mm)",
+     ylab = "Maximun leaf width (mm)",
+     xlim = c(10,155),
+     ylim = c(0, 160))
+
+# Histograph
+
+hist(penguins$flipper_length_mm,
+     breaks = 10,
+     main = "Flipper lengths histogram",
+     xlab = "Flipper lengths (mm)",
+     col = "gray")
+
+# Simple boxplot
+
+boxplot(ginkgo$petiole_length,
+        main = "Simple boxplot of petiole length",
+        ylab= "petiole lengths",
+        col= "gray")
+
+# Conditional boxplot
+
+boxplot(petiole_length ~ seeds_present, data= ginkgo,
+        main = "Conditional boxplot\n
+        petiole length by seeds present",
+        ylab = "Petiole length",
+        xlab = "Seed present",
+        col= "red")
+```
+
+
+:::
+
+
+## Distribution function
+
+In R, the dnorm() function calculates the probability density function for the normal distribution. This function takes in a value for the mean of the normal distribution, the standard deviation of the normal distribution, and the value for which the density is being calculated, and returns the probability density for that value. 
+
+:::{.notes}
+
+**Example**
+
+We will estimate the probability density that the value 8 occurs using 3 as mean and 5 as standard deviation.
+
+```{r}
+dnorm(8, mean= 3, sd= 5)
+```
+
+:::
+
+The pnorm() function calculates the cumulative distribution function for the normal distribution. This function takes in a value for the mean of the normal distribution, the standard deviation of the normal distribution, and the value for which the cumulative probability is being calculated, and returns the cumulative probability for values less than or equal to that value. 
+
+:::{.notes}
+
+**Example**
+
+We will estimate the cumulative distribution that the value 8 or less occurs using 3 as mean and 5 as standard deviation.
+
+```{r}
+pnorm(8, mean = 3, sd= 5)
+```
+
+:::
+
+
+The qnorm() function calculates the inverse cumulative distribution function for the normal distribution. This function takes in a probability value and returns the value at which that cumulative probability occurs in the normal distribution. 
+
+
+:::{.notes}
+
+**Example**
+
+We will estimate the inverse cumulative distribution using 0.25 of probability with 7 as mean and 3 as standard deviation.
+
+```{r}
+qnorm(0.25, mean = 7, sd= 3)
+```
+
+:::
+
+
+The dbinom() function calculates the probability density function for the binomial distribution. This function takes in the number of trials, the probability of success on each trial, and the number of successes, and returns the probability density for that number of successes. 
+
+
+:::{.notes}
+
+**Example**
+
+For example I will calculate the probability density for a binomial distribution with 10 trials, probability of success 0.5, and 5 successes
+
+
+```{r, warning =FALSE}
+dbinom(5, size = 10, prob = 0.5)
+```
+
+:::
+
+The pbinom() function calculates the cumulative distribution function for the binomial distribution. This function takes in the number of trials, the probability of success on each trial, and the number of successes, and returns the cumulative probability for the number of successes or fewer. 
+
+:::{.notes}
+
+**Example**
+
+We will calculate the cumulative probability for a binomial distribution with 10 trials, probability of success 0.5, and 5 successes
+
+```{r}
+pbinom(5, size = 10, prob = 0.5)
+```
+
+
+:::
+
+
+The qbinom() function calculates the inverse cumulative distribution function for the binomial distribution. This function takes in a probability value and returns the number of successes at which that cumulative probability occurs in the binomial distribution. 
+
+:::{.notes}
+
+**Example**
+
+We will calculate the number of successes at which the cumulative probability 0.5 occurs for a binomial distribution with 10 trials and probability of success 0.5.
+
+```{r}
+qbinom(0.5, size = 10, prob = 0.5)
+```
+
+:::
+
+
