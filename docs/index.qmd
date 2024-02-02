@@ -59,9 +59,7 @@ penguinsS<- penguins %>%
   summarise(mediapeso= mean(body_mass_g)) 
 penguinsS
 ```
-:::
 
-::: panel-tabset
 ## Asignación clase 2
 
 Uso R Markdow y visualización de datos
@@ -87,7 +85,7 @@ catrate2 <- catrate %>%
 
 catrate2
 ```
-:::
+
 
 
 ## Asignación clase 3 
